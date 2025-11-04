@@ -1,0 +1,76 @@
+{
+  "name": "meeting",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/meeting/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/meeting",
+        "main": "apps/meeting/src/main.ts",
+        "tsConfig": "apps/meeting/tsconfig.app.json",
+        "generatePackageJson": true,
+        "bundle": true,
+        "platform": "node",
+        "format": ["cjs"],
+        "external": [],
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "minify": true
+          },
+          "fileReplacements": [
+            {
+              "replace": "apps/meeting/src/environments/environment.ts",
+              "with": "apps/meeting/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "meeting:build",
+        "watch": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "meeting:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/meeting/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/meeting/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "coverageReporters": ["text"]
+        }
+      }
+    }
+  },
+  "tags": ["type:app", "scope:meeting"]
+}

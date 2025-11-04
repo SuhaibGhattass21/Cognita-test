@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc"
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./apps/meeting"
+    },
+    {
+      "path": "./apps/transcripts"
+    },
+    {
+      "path": "./libs/common"
+    },
+    {
+      "path": "./libs/contracts"
+    }
+  ]
+}

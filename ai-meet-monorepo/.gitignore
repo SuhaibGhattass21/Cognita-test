@@ -1,0 +1,66 @@
+# Node / build artifacts
+node_modules/
+build/
+dist/
+
+# Monorepo/tooling
+.turbo/
+.next/
+.vercel/
+
+# IDEs and editors
+.idea/
+.vscode/
+.vscode-test/
+
+# System files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Coverage / cache
+coverage/
+.cache/
+*.tsbuildinfo
+
+# Temporary and backup files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.old
+*.orig
+*.rej
+
+# Archives / binaries
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.dll
+*.class
+*.jar
+*.war
+*.iml
+
+# Certificates / keys
+*.pem
+*.key
+*.crt
+*.p12
+*.der
+
+# Other
+*.local
+*.pid

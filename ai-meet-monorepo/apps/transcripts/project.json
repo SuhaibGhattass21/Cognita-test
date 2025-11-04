@@ -1,0 +1,76 @@
+{
+  "name": "transcripts",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/transcripts/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/transcripts",
+        "main": "apps/transcripts/src/main.ts",
+        "tsConfig": "apps/transcripts/tsconfig.app.json",
+        "generatePackageJson": true,
+        "bundle": true,
+        "platform": "node",
+        "format": ["cjs"],
+        "external": [],
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "minify": true
+          },
+          "fileReplacements": [
+            {
+              "replace": "apps/transcripts/src/environments/environment.ts",
+              "with": "apps/transcripts/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "transcripts:build",
+        "watch": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "transcripts:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/transcripts/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/transcripts/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "coverageReporters": ["text"]
+        }
+      }
+    }
+  },
+  "tags": ["type:app", "scope:transcripts"]
+}

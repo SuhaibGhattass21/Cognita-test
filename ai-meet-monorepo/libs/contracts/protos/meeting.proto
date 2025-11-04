@@ -1,0 +1,17 @@
+syntax = "proto3";
+package aimeet.contracts.meeting;
+
+import "google/protobuf/timestamp.proto";
+
+message Meeting {
+  string id = 1;
+  string tenant_id = 2;
+  string title = 3;
+  google.protobuf.Timestamp started_at = 4;
+  google.protobuf.Timestamp ended_at = 5;
+}
+message MeetingEnded {
+  string meeting_id = 1;
+  string tenant_id = 2;
+  google.protobuf.Timestamp ended_at = 3;
+}

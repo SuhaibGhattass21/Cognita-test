@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "strict": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@aimeet/common": ["libs/common/src/index.ts"],
+      "@aimeet/contracts": ["libs/contracts/src/index.ts"],
+      "@aimeet/kafka": ["libs/common/kafka/index.ts"],
+      "@aimeet/db": ["libs/common/db/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp", "**/*.old.ts"]
+}

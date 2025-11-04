@@ -1,0 +1,291 @@
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [0m[7m[37m meeting [39m[27m[0m [2mapps/meeting/src/app/[22m[1mmeeting.service.spec.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96mapps/meeting/src/app/meeting.service.spec.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1490: [0mFile appears to be binary.
+
+[31m[Nest] 14712  - [39m10/30/2025, 6:33:37 PM [31m  ERROR[39m [38;5;3m[KafkaService] [39m[31mFailed to publish event undefined to topic test.connection[39m
+[31m[Nest] 14712  - [39m10/30/2025, 6:33:37 PM [31m  ERROR[39m [38;5;3m[KafkaService] [39m[31mTypeError: Cannot read properties of undefined (reading 'toISOString')[39m
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [0m[7m[37m meeting [39m[27m[0m [2mapps/meeting/src/tests/[22m[1mkafka.producer.spec.ts[22m ([0m[1m[41m19.012 s[49m[22m[0m)
+  [1m● [22mConsole
+
+    [2m[33mconsole.warn[39m[22m
+[33m      {"level":"WARN","timestamp":"2025-10-30T15:33:22.488Z","logger":"kafkajs","message":"KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option \"createPartitioner: Partitioners.LegacyPartitioner\". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable \"KAFKAJS_NO_PARTITIONER_WARNING=1\""}[39m
+[2m[22m
+[2m    [0m [90m 36 |[39m     })[33m;[39m[22m
+[2m     [90m 37 |[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 38 |[39m     [36mthis[39m[33m.[39mproducer [33m=[39m [36mthis[39m[33m.[39mkafka[33m.[39mproducer({[22m
+[2m     [90m    |[39m                                [31m[1m^[22m[2m[39m[22m
+[2m     [90m 39 |[39m       maxInFlightRequests[33m:[39m [35m1[39m[33m,[39m[22m
+[2m     [90m 40 |[39m       idempotent[33m:[39m [36mtrue[39m[33m,[39m[22m
+[2m     [90m 41 |[39m       transactionTimeout[33m:[39m [35m30000[39m[33m,[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:17:22[22m[2m[22m
+[2m      [2mat Object.warn ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/index.js[2m:27:12[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/utils/once.js[2m:7:14[22m[2m[22m
+[2m      [2mat Client.producer ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/index.js[2m:120:7)[22m[2m[22m
+[2m      [2mat new KafkaService ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:38:32)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:23:21)[22m[2m[22m
+
+    [2m[33mconsole.warn[39m[22m
+[33m      {"level":"WARN","timestamp":"2025-10-30T15:33:22.506Z","logger":"kafkajs","message":"[Producer] Limiting retries for the idempotent producer may invalidate EoS guarantees"}[39m
+[2m[22m
+[2m    [0m [90m 36 |[39m     })[33m;[39m[22m
+[2m     [90m 37 |[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 38 |[39m     [36mthis[39m[33m.[39mproducer [33m=[39m [36mthis[39m[33m.[39mkafka[33m.[39mproducer({[22m
+[2m     [90m    |[39m                                [31m[1m^[22m[2m[39m[22m
+[2m     [90m 39 |[39m       maxInFlightRequests[33m:[39m [35m1[39m[33m,[39m[22m
+[2m     [90m 40 |[39m       idempotent[33m:[39m [36mtrue[39m[33m,[39m[22m
+[2m     [90m 41 |[39m       transactionTimeout[33m:[39m [35m30000[39m[33m,[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:17:22[22m[2m[22m
+[2m      [2mat Object.warn ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat Object.<anonymous>.module.exports ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:54:12)[22m[2m[22m
+[2m      [2mat Client.producer ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/index.js[2m:123:12)[22m[2m[22m
+[2m      [2mat new KafkaService ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:38:32)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:23:21)[22m[2m[22m
+
+    [2m[33mconsole.warn[39m[22m
+[33m      {"level":"WARN","timestamp":"2025-10-30T15:33:22.662Z","logger":"kafkajs","message":"[Producer] Limiting retries for the idempotent producer may invalidate EoS guarantees"}[39m
+[2m[22m
+[2m    [0m [90m 36 |[39m     })[33m;[39m[22m
+[2m     [90m 37 |[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 38 |[39m     [36mthis[39m[33m.[39mproducer [33m=[39m [36mthis[39m[33m.[39mkafka[33m.[39mproducer({[22m
+[2m     [90m    |[39m                                [31m[1m^[22m[2m[39m[22m
+[2m     [90m 39 |[39m       maxInFlightRequests[33m:[39m [35m1[39m[33m,[39m[22m
+[2m     [90m 40 |[39m       idempotent[33m:[39m [36mtrue[39m[33m,[39m[22m
+[2m     [90m 41 |[39m       transactionTimeout[33m:[39m [35m30000[39m[33m,[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:17:22[22m[2m[22m
+[2m      [2mat Object.warn ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat Object.<anonymous>.module.exports ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:54:12)[22m[2m[22m
+[2m      [2mat Client.producer ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/index.js[2m:123:12)[22m[2m[22m
+[2m      [2mat new KafkaService ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:38:32)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:103:37)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:22.664Z","logger":"kafkajs","message":"[Connection] Connection error: ","broker":"localhost:9999","clientId":"meeting-service-timeout-test","stack":"AggregateError: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)"}[39m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3[22m[2m[22m
+[2m      [2mat Connection.logError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:111:7)[22m[2m[22m
+[2m      [2mat Socket.onError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:215:14)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:22.666Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: ","retryCount":0,"retryTime":304}[39m
+[2m[22m
+[2m    [0m [90m 67 |[39m[22m
+[2m     [90m 68 |[39m     [36mtry[39m {[22m
+[2m    [31m[1m>[22m[2m[39m[90m 69 |[39m       [36mawait[39m [36mthis[39m[33m.[39mproducer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m    |[39m       [31m[1m^[22m[2m[39m[22m
+[2m     [90m 70 |[39m       [36mawait[39m [36mthis[39m[33m.[39mconsumer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m 71 |[39m       [36mthis[39m[33m.[39misConnected [33m=[39m [36mtrue[39m[33m;[39m[22m
+[2m     [90m 72 |[39m       [36mthis[39m[33m.[39mlogger[33m.[39mlog([32m'Successfully connected to Kafka'[39m)[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat Object.error ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/brokerPool.js[2m:99:23[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:107:14[22m[2m[22m
+[2m      [2mat Cluster.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:146:5)[22m[2m[22m
+[2m      [2mat Object.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:219:7)[22m[2m[22m
+[2m      [2mat KafkaService.connect ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:69:7)[22m[2m[22m
+[2m      [2mat KafkaService.onModuleInit ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:53:7)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:107:11)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:22.976Z","logger":"kafkajs","message":"[Connection] Connection error: ","broker":"localhost:9999","clientId":"meeting-service-timeout-test","stack":"AggregateError: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)"}[39m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3[22m[2m[22m
+[2m      [2mat Connection.logError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:111:7)[22m[2m[22m
+[2m      [2mat Socket.onError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:215:14)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:22.978Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: ","retryCount":1,"retryTime":502}[39m
+[2m[22m
+[2m    [0m [90m 67 |[39m[22m
+[2m     [90m 68 |[39m     [36mtry[39m {[22m
+[2m    [31m[1m>[22m[2m[39m[90m 69 |[39m       [36mawait[39m [36mthis[39m[33m.[39mproducer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m    |[39m       [31m[1m^[22m[2m[39m[22m
+[2m     [90m 70 |[39m       [36mawait[39m [36mthis[39m[33m.[39mconsumer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m 71 |[39m       [36mthis[39m[33m.[39misConnected [33m=[39m [36mtrue[39m[33m;[39m[22m
+[2m     [90m 72 |[39m       [36mthis[39m[33m.[39mlogger[33m.[39mlog([32m'Successfully connected to Kafka'[39m)[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat Object.error ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/brokerPool.js[2m:99:23[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:107:14[22m[2m[22m
+[2m      [2mat Cluster.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:146:5)[22m[2m[22m
+[2m      [2mat Object.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:219:7)[22m[2m[22m
+[2m      [2mat KafkaService.connect ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:69:7)[22m[2m[22m
+[2m      [2mat KafkaService.onModuleInit ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:53:7)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:107:11)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:23.491Z","logger":"kafkajs","message":"[Connection] Connection error: ","broker":"localhost:9999","clientId":"meeting-service-timeout-test","stack":"AggregateError: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)"}[39m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3[22m[2m[22m
+[2m      [2mat Connection.logError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:111:7)[22m[2m[22m
+[2m      [2mat Socket.onError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:215:14)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:23.492Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: ","retryCount":2,"retryTime":1048}[39m
+[2m[22m
+[2m    [0m [90m 67 |[39m[22m
+[2m     [90m 68 |[39m     [36mtry[39m {[22m
+[2m    [31m[1m>[22m[2m[39m[90m 69 |[39m       [36mawait[39m [36mthis[39m[33m.[39mproducer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m    |[39m       [31m[1m^[22m[2m[39m[22m
+[2m     [90m 70 |[39m       [36mawait[39m [36mthis[39m[33m.[39mconsumer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m 71 |[39m       [36mthis[39m[33m.[39misConnected [33m=[39m [36mtrue[39m[33m;[39m[22m
+[2m     [90m 72 |[39m       [36mthis[39m[33m.[39mlogger[33m.[39mlog([32m'Successfully connected to Kafka'[39m)[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat Object.error ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/brokerPool.js[2m:99:23[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:107:14[22m[2m[22m
+[2m      [2mat Cluster.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:146:5)[22m[2m[22m
+[2m      [2mat Object.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:219:7)[22m[2m[22m
+[2m      [2mat KafkaService.connect ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:69:7)[22m[2m[22m
+[2m      [2mat KafkaService.onModuleInit ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:53:7)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:107:11)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:24.546Z","logger":"kafkajs","message":"[Connection] Connection error: ","broker":"localhost:9999","clientId":"meeting-service-timeout-test","stack":"AggregateError: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)"}[39m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3[22m[2m[22m
+[2m      [2mat Connection.logError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:111:7)[22m[2m[22m
+[2m      [2mat Socket.onError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:215:14)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:24.546Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: ","retryCount":3,"retryTime":2032}[39m
+[2m[22m
+[2m    [0m [90m 67 |[39m[22m
+[2m     [90m 68 |[39m     [36mtry[39m {[22m
+[2m    [31m[1m>[22m[2m[39m[90m 69 |[39m       [36mawait[39m [36mthis[39m[33m.[39mproducer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m    |[39m       [31m[1m^[22m[2m[39m[22m
+[2m     [90m 70 |[39m       [36mawait[39m [36mthis[39m[33m.[39mconsumer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m 71 |[39m       [36mthis[39m[33m.[39misConnected [33m=[39m [36mtrue[39m[33m;[39m[22m
+[2m     [90m 72 |[39m       [36mthis[39m[33m.[39mlogger[33m.[39mlog([32m'Successfully connected to Kafka'[39m)[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat Object.error ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/brokerPool.js[2m:99:23[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:107:14[22m[2m[22m
+[2m      [2mat Cluster.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:146:5)[22m[2m[22m
+[2m      [2mat Object.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:219:7)[22m[2m[22m
+[2m      [2mat KafkaService.connect ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:69:7)[22m[2m[22m
+[2m      [2mat KafkaService.onModuleInit ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:53:7)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:107:11)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:26.584Z","logger":"kafkajs","message":"[Connection] Connection error: ","broker":"localhost:9999","clientId":"meeting-service-timeout-test","stack":"AggregateError: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)"}[39m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3[22m[2m[22m
+[2m      [2mat Connection.logError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:111:7)[22m[2m[22m
+[2m      [2mat Socket.onError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:215:14)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:26.586Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: ","retryCount":4,"retryTime":3746}[39m
+[2m[22m
+[2m    [0m [90m 67 |[39m[22m
+[2m     [90m 68 |[39m     [36mtry[39m {[22m
+[2m    [31m[1m>[22m[2m[39m[90m 69 |[39m       [36mawait[39m [36mthis[39m[33m.[39mproducer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m    |[39m       [31m[1m^[22m[2m[39m[22m
+[2m     [90m 70 |[39m       [36mawait[39m [36mthis[39m[33m.[39mconsumer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m 71 |[39m       [36mthis[39m[33m.[39misConnected [33m=[39m [36mtrue[39m[33m;[39m[22m
+[2m     [90m 72 |[39m       [36mthis[39m[33m.[39mlogger[33m.[39mlog([32m'Successfully connected to Kafka'[39m)[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat Object.error ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/brokerPool.js[2m:99:23[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:107:14[22m[2m[22m
+[2m      [2mat Cluster.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:146:5)[22m[2m[22m
+[2m      [2mat Object.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:219:7)[22m[2m[22m
+[2m      [2mat KafkaService.connect ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:69:7)[22m[2m[22m
+[2m      [2mat KafkaService.onModuleInit ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:53:7)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:107:11)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:30.344Z","logger":"kafkajs","message":"[Connection] Connection error: ","broker":"localhost:9999","clientId":"meeting-service-timeout-test","stack":"AggregateError: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)"}[39m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3[22m[2m[22m
+[2m      [2mat Connection.logError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:111:7)[22m[2m[22m
+[2m      [2mat Socket.onError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:215:14)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:30.344Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: ","retryCount":5,"retryTime":6758}[39m
+[2m[22m
+[2m    [0m [90m 67 |[39m[22m
+[2m     [90m 68 |[39m     [36mtry[39m {[22m
+[2m    [31m[1m>[22m[2m[39m[90m 69 |[39m       [36mawait[39m [36mthis[39m[33m.[39mproducer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m    |[39m       [31m[1m^[22m[2m[39m[22m
+[2m     [90m 70 |[39m       [36mawait[39m [36mthis[39m[33m.[39mconsumer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m 71 |[39m       [36mthis[39m[33m.[39misConnected [33m=[39m [36mtrue[39m[33m;[39m[22m
+[2m     [90m 72 |[39m       [36mthis[39m[33m.[39mlogger[33m.[39mlog([32m'Successfully connected to Kafka'[39m)[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat Object.error ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/brokerPool.js[2m:99:23[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:107:14[22m[2m[22m
+[2m      [2mat Cluster.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:146:5)[22m[2m[22m
+[2m      [2mat Object.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:219:7)[22m[2m[22m
+[2m      [2mat KafkaService.connect ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:69:7)[22m[2m[22m
+[2m      [2mat KafkaService.onModuleInit ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:53:7)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:107:11)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:37.120Z","logger":"kafkajs","message":"[Connection] Connection error: ","broker":"localhost:9999","clientId":"meeting-service-timeout-test","stack":"AggregateError: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)"}[39m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3[22m[2m[22m
+[2m      [2mat Connection.logError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:111:7)[22m[2m[22m
+[2m      [2mat Socket.onError ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/network/connection.js[2m:215:14)[22m[2m[22m
+
+    [2m[31mconsole.error[39m[22m
+[31m      {"level":"ERROR","timestamp":"2025-10-30T15:33:37.121Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: ","retryCount":6,"retryTime":13758}[39m
+[2m[22m
+[2m    [0m [90m 67 |[39m[22m
+[2m     [90m 68 |[39m     [36mtry[39m {[22m
+[2m    [31m[1m>[22m[2m[39m[90m 69 |[39m       [36mawait[39m [36mthis[39m[33m.[39mproducer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m    |[39m       [31m[1m^[22m[2m[39m[22m
+[2m     [90m 70 |[39m       [36mawait[39m [36mthis[39m[33m.[39mconsumer[33m.[39mconnect()[33m;[39m[22m
+[2m     [90m 71 |[39m       [36mthis[39m[33m.[39misConnected [33m=[39m [36mtrue[39m[33m;[39m[22m
+[2m     [90m 72 |[39m       [36mthis[39m[33m.[39mlogger[33m.[39mlog([32m'Successfully connected to Kafka'[39m)[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:15:22[22m[2m[22m
+[2m      [2mat Object.error ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/brokerPool.js[2m:99:23[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:107:14[22m[2m[22m
+[2m      [2mat Cluster.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/cluster/index.js[2m:146:5)[22m[2m[22m
+[2m      [2mat Object.connect ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:219:7)[22m[2m[22m
+[2m      [2mat KafkaService.connect ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:69:7)[22m[2m[22m
+[2m      [2mat KafkaService.onModuleInit ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:53:7)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:107:11)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mKafka Producer Connection Test › Producer Connection › should handle connection timeout gracefully[39m[22m
+
+    thrown: "Exceeded timeout of 15000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+[2m[22m
+[2m    [0m [90m 90 |[39m     }[33m,[39m [35m30000[39m)[33m;[39m [90m// 30 second timeout for Kafka operations[39m[22m
+[2m     [90m 91 |[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 92 |[39m     it([32m'should handle connection timeout gracefully'[39m[33m,[39m [36masync[39m () [33m=>[39m {[22m
+[2m     [90m    |[39m     [31m[1m^[22m[2m[39m[22m
+[2m     [90m 93 |[39m       [36mconst[39m logger [33m=[39m [36mnew[39m [33mLogger[39m([32m'TimeoutTest'[39m)[33m;[39m[22m
+[2m     [90m 94 |[39m       [22m
+[2m     [90m 95 |[39m       [36mtry[39m {[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:92:5[22m[2m[22m
+[2m      [2mat [22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:45:3[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.producer.spec.ts[39m[0m[2m:5:1)[22m[2m[22m
+
+[33mA worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.[39m
+[1mTest Suites: [22m[1m[31m2 failed[39m[22m, 2 total
+[1mTests:       [22m[1m[31m1 failed[39m[22m, [1m[32m2 passed[39m[22m, 3 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        [1m[33m20.275 s[39m[22m
+[2mRan all test suites[22m[2m.[22m

@@ -1,0 +1,160 @@
+Compiling TypeScript files for project "meeting"...
+[1m[31m[91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/events/meeting.events.old.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/events/transcript.events.old.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/meeting.service.ts[0m:[93m3[0m:[93m143[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via '@aimeet/kafka' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/meeting.service.ts'[39m[22m
+[1m[31m    Imported via '@aimeet/kafka' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/app.module.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m import { KafkaService, EventTopics, MeetingCreatedEvent, MeetingEndedEvent, MeetingParticipantJoinedEvent, MeetingParticipantLeftEvent } from '@aimeet/kafka';[39m[22m
+[1m[31m[7m [0m [91m                                                                                                                                              ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/app.module.ts[0m:[93m5[0m:[93m29[0m[39m[22m
+[1m[31m    [7m5[0m import { KafkaModule } from '@aimeet/kafka';[39m[22m
+[1m[31m    [7m [0m [96m                            ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/meeting.service.ts[0m:[93m5[0m:[93m33[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via '@aimeet/db' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/meeting.service.ts'[39m[22m
+[1m[31m    Imported via '@aimeet/db' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/meeting.controller.ts'[39m[22m
+[1m[31m    Imported via '@aimeet/db' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/app.module.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m import { DatabaseService } from '@aimeet/db';[39m[22m
+[1m[31m[7m [0m [91m                                ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/meeting.controller.ts[0m:[93m3[0m:[93m33[0m[39m[22m
+[1m[31m    [7m3[0m import { DatabaseService } from '@aimeet/db';[39m[22m
+[1m[31m    [7m [0m [96m                                ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting/src/app/app.module.ts[0m:[93m6[0m:[93m32[0m[39m[22m
+[1m[31m    [7m6[0m import { DatabaseModule } from '@aimeet/db';[39m[22m
+[1m[31m    [7m [0m [96m                               ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/database.module.ts[0m:[93m2[0m:[93m33[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/database.service.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './database.service' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/database.module.ts'[39m[22m
+[1m[31m    Imported via './database.service' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m import { DatabaseService } from './database.service';[39m[22m
+[1m[31m[7m [0m [91m                                ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts[0m:[93m2[0m:[93m15[0m[39m[22m
+[1m[31m    [7m2[0m export * from './database.service';[39m[22m
+[1m[31m    [7m [0m [96m              ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/database.service.ts[0m:[93m2[0m:[93m71[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/prisma-clients.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './prisma-clients' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/database.service.ts'[39m[22m
+[1m[31m    Imported via './prisma-clients' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts'[39m[22m
+[1m[31m    Imported via './prisma-clients' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/migration.helper.ts'[39m[22m
+[1m[31m    Imported via './prisma-clients' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/connection-test.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m import { createPrismaClient, ServiceType, disconnectAllClients } from './prisma-clients';[39m[22m
+[1m[31m[7m [0m [91m                                                                      ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts[0m:[93m3[0m:[93m15[0m[39m[22m
+[1m[31m    [7m3[0m export * from './prisma-clients';[39m[22m
+[1m[31m    [7m [0m [96m              ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/migration.helper.ts[0m:[93m2[0m:[93m29[0m[39m[22m
+[1m[31m    [7m2[0m import { ServiceType } from './prisma-clients';[39m[22m
+[1m[31m    [7m [0m [96m                            ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/connection-test.ts[0m:[93m1[0m:[93m49[0m[39m[22m
+[1m[31m    [7m1[0m import { createPrismaClient, ServiceType } from './prisma-clients';[39m[22m
+[1m[31m    [7m [0m [96m                                                ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/database.module.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './database.module' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './database.module';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts[0m:[93m4[0m:[93m15[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/migration.helper.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './migration.helper' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m export * from './migration.helper';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts[0m:[93m5[0m:[93m15[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/connection-test.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './connection-test' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/db/index.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m export * from './connection-test';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/kafka.module.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './kafka.module' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './kafka.module';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts[0m:[93m4[0m:[93m15[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/events/meeting.events.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './events/meeting.events' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m export * from './events/meeting.events';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts[0m:[93m5[0m:[93m15[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/events/transcript.events.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './events/transcript.events' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m export * from './events/transcript.events';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts[0m:[93m6[0m:[93m96[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/decorators/event-handler.decorator.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './decorators/event-handler.decorator' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m6[0m export { EventHandler as KafkaEventHandler, MeetingEventHandler, TranscriptEventHandler } from './decorators/event-handler.decorator';[39m[22m
+[1m[31m[7m [0m [91m                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/kafka.module.ts[0m:[93m2[0m:[93m43[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/kafka.service.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './kafka.service' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/kafka.module.ts'[39m[22m
+[1m[31m    Imported via './kafka.service' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m import { KafkaService, KafkaConfig } from './kafka.service';[39m[22m
+[1m[31m[7m [0m [91m                                          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts[0m:[93m2[0m:[93m15[0m[39m[22m
+[1m[31m    [7m2[0m export * from './kafka.service';[39m[22m
+[1m[31m    [7m [0m [96m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m[96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/kafka.service.ts[0m:[93m3[0m:[93m61[0m - [91merror[0m[90m TS6059: [0mFile '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/events/event.types.ts' is not under 'rootDir' '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/apps/meeting'. 'rootDir' is expected to contain all source files.[39m[22m
+[1m[31m  The file is in the program because:[39m[22m
+[1m[31m    Imported via './events/event.types' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/kafka.service.ts'[39m[22m
+[1m[31m    Imported via './events/event.types' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts'[39m[22m
+[1m[31m    Imported via './event.types' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/events/meeting.events.ts'[39m[22m
+[1m[31m    Imported via './event.types' from file '/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/events/transcript.events.ts'[39m[22m
+[1m[31m    Root file specified for compilation[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m import { BaseEvent, EventProducerResult, EventTopics } from './events/event.types';[39m[22m
+[1m[31m[7m [0m [91m                                                            ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/index.ts[0m:[93m3[0m:[93m15[0m[39m[22m
+[1m[31m    [7m3[0m export * from './events/event.types';[39m[22m
+[1m[31m    [7m [0m [96m              ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/events/meeting.events.ts[0m:[93m1[0m:[93m27[0m[39m[22m
+[1m[31m    [7m1[0m import { BaseEvent } from './event.types';[39m[22m
+[1m[31m    [7m [0m [96m                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m  [96m/Suhaib/Ethereal/Cognita/Cognita_TestV2.0/ai-meet-monorepo/libs/common/kafka/events/transcript.events.ts[0m:[93m1[0m:[93m27[0m[39m[22m
+[1m[31m    [7m1[0m import { BaseEvent } from './event.types';[39m[22m
+[1m[31m    [7m [0m [96m                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    File is included via import here.[39m[22m
+[1m[31m[39m[22m

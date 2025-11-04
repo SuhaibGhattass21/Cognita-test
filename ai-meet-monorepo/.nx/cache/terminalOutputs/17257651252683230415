@@ -1,0 +1,14 @@
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mCannot find module 'esbuild'[39m
+
+Require stack:
+- C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\node_modules\.pnpm\@nx+esbuild@22.0.2_@babel+traverse@7.28.5_nx@22.0.2\node_modules\@nx\esbuild\src\executors\esbuild\esbuild.impl.js
+- C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\node_modules\.pnpm\nx@22.0.2\node_modules\nx\src\config\schema-utils.js
+- C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\node_modules\.pnpm\nx@22.0.2\node_modules\nx\src\command-line\run\executor-utils.js
+- C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\node_modules\.pnpm\nx@22.0.2\node_modules\nx\src\project-graph\utils\project-configuration-utils.js
+- C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\node_modules\.pnpm\nx@22.0.2\node_modules\nx\src\utils\package-json.js
+- C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\node_modules\.pnpm\nx@22.0.2\node_modules\nx\src\utils\print-help.js
+- C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\node_modules\.pnpm\nx@22.0.2\node_modules\nx\src\command-line\run\run.js
+- C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\node_modules\.pnpm\nx@22.0.2\node_modules\nx\bin\run-executor.js
+Pass --verbose to see the stacktrace.
+

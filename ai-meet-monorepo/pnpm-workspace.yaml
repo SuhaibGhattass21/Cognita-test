@@ -1,0 +1,9 @@
+packages:
+  - apps/*
+  - libs/*
+  - tools/*
+
+ignoredBuiltDependencies:
+  - '@prisma/client'
+  - nx
+  - protobufjs

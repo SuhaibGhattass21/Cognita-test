@@ -1,0 +1,94 @@
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [0m[7m[37m transcripts [39m[27m[0m [2mapps/transcripts/src/app/[22m[1mtranscript-event.handler.spec.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96mapps/transcripts/src/app/transcript-event.handler.spec.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1490: [0mFile appears to be binary.
+
+[31m[Nest] 20524  - [39m10/30/2025, 6:46:43 PM [31m  ERROR[39m [38;5;3m[MessageReceiveError] [39m[31m❌ Message receive test failed:[39m
+[31m[Nest] 20524  - [39m10/30/2025, 6:46:43 PM [31m  ERROR[39m [38;5;3m[MessageReceiveError] [39m[31mError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m"[7mtranscripts[27m-service-test"[39m
+Received: [31m"[7mmeeting[27m-service-test"[39m[39m
+[31m[Nest] 20524  - [39m10/30/2025, 6:46:43 PM [31m  ERROR[39m [38;5;3m[KafkaService] [39m[31mFailed to subscribe to topic invalid.topic.test[39m
+[31m[Nest] 20524  - [39m10/30/2025, 6:46:43 PM [31m  ERROR[39m [38;5;3m[KafkaService] [39m[31mKafkaJSNonRetriableError: Cannot subscribe to topic while consumer is running[39m
+[31m[Nest] 20524  - [39m10/30/2025, 6:46:43 PM [31m  ERROR[39m [38;5;3m[KafkaService] [39m[31mFailed to subscribe to topic test.error.handling[39m
+[31m[Nest] 20524  - [39m10/30/2025, 6:46:43 PM [31m  ERROR[39m [38;5;3m[KafkaService] [39m[31mKafkaJSNonRetriableError: Cannot subscribe to topic while consumer is running[39m
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [0m[7m[37m transcripts [39m[27m[0m [2mapps/transcripts/src/tests/[22m[1mkafka.consumer.spec.ts[22m ([0m[1m[41m5.447 s[49m[22m[0m)
+  [1m● [22mConsole
+
+    [2m[33mconsole.warn[39m[22m
+[33m      {"level":"WARN","timestamp":"2025-10-30T15:46:40.918Z","logger":"kafkajs","message":"KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option \"createPartitioner: Partitioners.LegacyPartitioner\". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable \"KAFKAJS_NO_PARTITIONER_WARNING=1\""}[39m
+[2m[22m
+[2m    [0m [90m 36 |[39m     })[33m;[39m[22m
+[2m     [90m 37 |[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 38 |[39m     [36mthis[39m[33m.[39mproducer [33m=[39m [36mthis[39m[33m.[39mkafka[33m.[39mproducer({[22m
+[2m     [90m    |[39m                                [31m[1m^[22m[2m[39m[22m
+[2m     [90m 39 |[39m       maxInFlightRequests[33m:[39m [35m1[39m[33m,[39m[22m
+[2m     [90m 40 |[39m       idempotent[33m:[39m [36mtrue[39m[33m,[39m[22m
+[2m     [90m 41 |[39m       transactionTimeout[33m:[39m [35m30000[39m[33m,[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:17:22[22m[2m[22m
+[2m      [2mat Object.warn ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/index.js[2m:27:12[22m[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/utils/once.js[2m:7:14[22m[2m[22m
+[2m      [2mat Client.producer ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/index.js[2m:120:7)[22m[2m[22m
+[2m      [2mat new KafkaService ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:38:32)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.consumer.spec.ts[39m[0m[2m:25:21)[22m[2m[22m
+
+    [2m[33mconsole.warn[39m[22m
+[33m      {"level":"WARN","timestamp":"2025-10-30T15:46:40.929Z","logger":"kafkajs","message":"[Producer] Limiting retries for the idempotent producer may invalidate EoS guarantees"}[39m
+[2m[22m
+[2m    [0m [90m 36 |[39m     })[33m;[39m[22m
+[2m     [90m 37 |[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 38 |[39m     [36mthis[39m[33m.[39mproducer [33m=[39m [36mthis[39m[33m.[39mkafka[33m.[39mproducer({[22m
+[2m     [90m    |[39m                                [31m[1m^[22m[2m[39m[22m
+[2m     [90m 39 |[39m       maxInFlightRequests[33m:[39m [35m1[39m[33m,[39m[22m
+[2m     [90m 40 |[39m       idempotent[33m:[39m [36mtrue[39m[33m,[39m[22m
+[2m     [90m 41 |[39m       transactionTimeout[33m:[39m [35m30000[39m[33m,[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:17:22[22m[2m[22m
+[2m      [2mat Object.warn ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat Object.<anonymous>.module.exports ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:54:12)[22m[2m[22m
+[2m      [2mat Client.producer ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/index.js[2m:123:12)[22m[2m[22m
+[2m      [2mat new KafkaService ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:38:32)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.consumer.spec.ts[39m[0m[2m:25:21)[22m[2m[22m
+
+    [2m[33mconsole.warn[39m[22m
+[33m      {"level":"WARN","timestamp":"2025-10-30T15:46:43.109Z","logger":"kafkajs","message":"[Producer] Limiting retries for the idempotent producer may invalidate EoS guarantees"}[39m
+[2m[22m
+[2m    [0m [90m 36 |[39m     })[33m;[39m[22m
+[2m     [90m 37 |[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 38 |[39m     [36mthis[39m[33m.[39mproducer [33m=[39m [36mthis[39m[33m.[39mkafka[33m.[39mproducer({[22m
+[2m     [90m    |[39m                                [31m[1m^[22m[2m[39m[22m
+[2m     [90m 39 |[39m       maxInFlightRequests[33m:[39m [35m1[39m[33m,[39m[22m
+[2m     [90m 40 |[39m       idempotent[33m:[39m [36mtrue[39m[33m,[39m[22m
+[2m     [90m 41 |[39m       transactionTimeout[33m:[39m [35m30000[39m[33m,[39m[0m[22m
+[2m[22m
+[2m      [2mat [22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/console.js[2m:17:22[22m[2m[22m
+[2m      [2mat Object.warn ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/loggers/index.js[2m:16:3)[22m[2m[22m
+[2m      [2mat Object.<anonymous>.module.exports ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/producer/index.js[2m:54:12)[22m[2m[22m
+[2m      [2mat Client.producer ([22m[2m../../node_modules/.pnpm/kafkajs@2.2.4/node_modules/kafkajs/src/index.js[2m:123:12)[22m[2m[22m
+[2m      [2mat new KafkaService ([22m[2m../../libs/common/kafka/kafka.service.ts[2m:38:32)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.consumer.spec.ts[39m[0m[2m:101:33)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mKafka Consumer Connection Test › Consumer Connection › should receive messages sent to subscribed topic[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"[7mtranscripts[27m-service-test"[39m
+    Received: [31m"[7mmeeting[27m-service-test"[39m
+[2m[22m
+[2m    [0m [90m 145 |[39m           expect(receivedMessage)[33m.[39mtoBeDefined()[33m;[39m[22m
+[2m     [90m 146 |[39m           expect(receivedMessage[33m.[39meventType)[33m.[39mtoBe([32m'test.connection'[39m)[33m;[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 147 |[39m           expect(receivedMessage[33m.[39msource)[33m.[39mtoBe([32m'transcripts-service-test'[39m)[33m;[39m[22m
+[2m     [90m     |[39m                                          [31m[1m^[22m[2m[39m[22m
+[2m     [90m 148 |[39m         } [36melse[39m {[22m
+[2m     [90m 149 |[39m           logger[33m.[39mwarn([32m'⚠️ Message not received within timeout period'[39m)[33m;[39m[22m
+[2m     [90m 150 |[39m           logger[33m.[39mlog([32m'🔍 This might be due to consumer group rebalancing or network issues'[39m)[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/tests/kafka.consumer.spec.ts[39m[0m[2m:147:42)[22m[2m[22m
+
+[1mTest Suites: [22m[1m[31m2 failed[39m[22m, 2 total
+[1mTests:       [22m[1m[31m1 failed[39m[22m, [1m[32m3 passed[39m[22m, 4 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        6.025 s, estimated 12 s
+[2mRan all test suites[22m[2m matching [22m/t|r|a|n|s|c|r|i|p|t|-|e|v|e|n|t|.|h|a|n|d|l|e|r|.|s|p|e|c|.|t|s/i[2m.[22m

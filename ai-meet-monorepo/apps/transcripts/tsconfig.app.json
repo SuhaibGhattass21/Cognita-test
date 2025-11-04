@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["node"],
+    "emitDecoratorMetadata": true,
+    "target": "es2020",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "composite": false,
+    "noEmit": false,
+    "baseUrl": "../../",
+    "paths": {
+      "@aimeet/kafka": ["libs/common/kafka/index.ts"],
+      "@aimeet/db": ["libs/common/db/index.ts"]
+    }
+  },
+  "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"],
+  "include": ["src/**/*.ts", "../../libs/**/*.ts"]
+}

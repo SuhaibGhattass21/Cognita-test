@@ -1,0 +1,40 @@
+name: Detect Affected & Dispatch
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  detect:
+    name: Detect affected
+    runs-on: ubuntu-latest
+    outputs:
+      affected: ${{ steps.aff.outputs.projects }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: '8'
+      - name: Install deps
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm install --frozen-lockfile
+      - id: aff
+        name: Get affected projects
+        run: |
+          echo "Affected projects:"
+          npx nx print-affected --base=origin/main --select=projects | jq -r '.[]' > affected.txt
+          cat affected.txt
+          echo "::set-output name=projects::$(paste -sd, affected.txt || true)"
+
+  dispatch:
+    name: Dispatch per-project jobs
+    needs: detect
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read affected
+        run: echo "Affected: ${{ needs.detect.outputs.affected }}"

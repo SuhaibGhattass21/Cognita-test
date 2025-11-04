@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx build transcripts --prod",
+    "startTime": "2025-11-02T20:07:14.264Z",
+    "endTime": "2025-11-02T20:07:17.482Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "transcripts:build:production",
+      "target": "build",
+      "projectName": "transcripts",
+      "hash": "17145987344472920968",
+      "startTime": "2025-11-02T20:07:14.332Z",
+      "endTime": "2025-11-02T20:07:17.466Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

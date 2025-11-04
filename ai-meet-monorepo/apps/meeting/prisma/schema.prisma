@@ -1,0 +1,80 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../../node_modules/.prisma/meeting-client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Meeting {
+  id           String        @id @default(cuid())
+  title        String
+  startTime    DateTime
+  endTime      DateTime?
+  tenantId     String
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  status       MeetingStatus @default(SCHEDULED)
+  participants Participant[]
+  recordings   Recording[]
+
+  @@map("meetings")
+}
+
+model Participant {
+  id        String          @id @default(cuid())
+  meetingId String
+  userId    String
+  name      String
+  email     String?
+  role      ParticipantRole @default(ATTENDEE)
+  joinedAt  DateTime?
+  leftAt    DateTime?
+  createdAt DateTime        @default(now())
+  meeting   Meeting         @relation(fields: [meetingId], references: [id], onDelete: Cascade)
+
+  @@unique([meetingId, userId])
+  @@map("participants")
+}
+
+model Recording {
+  id          String          @id @default(cuid())
+  meetingId   String
+  fileName    String
+  filePath    String
+  fileSize    Int?
+  duration    Int?
+  format      String          @default("webm")
+  quality     String          @default("standard")
+  status      RecordingStatus @default(PROCESSING)
+  startedAt   DateTime
+  completedAt DateTime?
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  meeting     Meeting         @relation(fields: [meetingId], references: [id], onDelete: Cascade)
+
+  @@map("recordings")
+}
+
+enum MeetingStatus {
+  SCHEDULED
+  ACTIVE
+  ENDED
+  CANCELLED
+}
+
+enum ParticipantRole {
+  HOST
+  MODERATOR
+  ATTENDEE
+  OBSERVER
+}
+
+enum RecordingStatus {
+  PROCESSING
+  COMPLETED
+  FAILED
+  DELETED
+}

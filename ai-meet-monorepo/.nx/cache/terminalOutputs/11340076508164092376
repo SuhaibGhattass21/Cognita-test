@@ -1,0 +1,29 @@
+Entrypoint main =
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value.
+Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
+
+ERROR in main
+Module not found: Error: Can't resolve './src' in 'C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo'
+resolve './src' in 'C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo'
+  using description file: C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\package.json (relative path: .)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\package.json (relative path: ./src)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\src doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\src.js doesn't exist
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\src.json doesn't exist
+      .wasm
+        Field 'browser' doesn't contain a valid alias configuration
+        C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\src.wasm doesn't exist
+      as directory
+        C:\Suhaib\Ethereal\Cognita\Cognita_TestV2.0\ai-meet-monorepo\src doesn't exist
+
+webpack 5.102.1 compiled with 1 error and 1 warning in 53 ms

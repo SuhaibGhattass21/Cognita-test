@@ -1,0 +1,563 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.0.2",
+  "pathMappings": {
+    "@aimeet/common": [
+      "libs/common/src/index.ts"
+    ],
+    "@aimeet/contracts": [
+      "libs/contracts/src/index.ts"
+    ],
+    "@aimeet/kafka": [
+      "libs/common/kafka/index.ts"
+    ],
+    "@aimeet/db": [
+      "libs/common/db/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "ai-meet-monorepo": [
+        {
+          "file": ".changeset/README.md",
+          "hash": "4888845876018830777"
+        },
+        {
+          "file": ".changeset/config.json",
+          "hash": "6878007938558061715"
+        },
+        {
+          "file": ".env.example",
+          "hash": "10965410219738907930"
+        },
+        {
+          "file": ".github/workflows/ci-dispatch.yml",
+          "hash": "12619474469780630953"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "13519605255694795690"
+        },
+        {
+          "file": "docker-compose.yml",
+          "hash": "818692946875651424"
+        },
+        {
+          "file": "docs/image-policy.md",
+          "hash": "14773192682499473575"
+        },
+        {
+          "file": "docs/onboarding.md",
+          "hash": "3247929323805450228"
+        },
+        {
+          "file": "e2e-database-test.js",
+          "hash": "8401319872443601202",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "e2e-kafka-test.js",
+          "hash": "11432200439025849956",
+          "deps": [
+            "npm:kafkajs"
+          ]
+        },
+        {
+          "file": "eslint.config.js",
+          "hash": "14270074034687139468",
+          "deps": [
+            "npm:@eslint/compat",
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser"
+          ]
+        },
+        {
+          "file": "infra/nginx/nginx.conf",
+          "hash": "15430734519169195901"
+        },
+        {
+          "file": "infra/terraform/main.tf",
+          "hash": "8551139828443621948"
+        },
+        {
+          "file": "infra/terraform/providers.tf",
+          "hash": "15316486920021192226"
+        },
+        {
+          "file": "infra/terraform/variables.tf",
+          "hash": "2828569344237906753"
+        },
+        {
+          "file": "infra/terraform/versions.tf",
+          "hash": "2361537094510572039"
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "5859961371443190420",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "17884145015805651112",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "libs/common/db/connection-test.ts",
+          "hash": "7204193734480206"
+        },
+        {
+          "file": "libs/common/db/database.module.ts",
+          "hash": "5784789059756363188",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/common/db/database.service.ts",
+          "hash": "15702895918652728458",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/common/db/index.ts",
+          "hash": "67561247759454286"
+        },
+        {
+          "file": "libs/common/db/migration.helper.ts",
+          "hash": "14454785414261631085"
+        },
+        {
+          "file": "libs/common/db/prisma-clients.ts",
+          "hash": "8165159474371490955"
+        },
+        {
+          "file": "libs/common/kafka/decorators/event-handler.decorator.ts",
+          "hash": "11301688321873930476",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/common/kafka/events/event.types.ts",
+          "hash": "6325277315037313330"
+        },
+        {
+          "file": "libs/common/kafka/events/meeting.events.ts",
+          "hash": "18400461724502853086"
+        },
+        {
+          "file": "libs/common/kafka/events/transcript.events.ts",
+          "hash": "14046321726210613712"
+        },
+        {
+          "file": "libs/common/kafka/index.ts",
+          "hash": "7207976894659302902"
+        },
+        {
+          "file": "libs/common/kafka/kafka.module.ts",
+          "hash": "15582809767947074264",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/common/kafka/kafka.service.ts",
+          "hash": "1326861149199467166",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:kafkajs"
+          ]
+        },
+        {
+          "file": "libs/common/otel-node.js",
+          "hash": "3319175956374001543",
+          "deps": [
+            "npm:@opentelemetry/sdk-node",
+            "npm:@opentelemetry/auto-instrumentations-node"
+          ]
+        },
+        {
+          "file": "libs/contracts/openapi/api-v1.yaml",
+          "hash": "717898145003208344"
+        },
+        {
+          "file": "libs/contracts/protos/meeting.proto",
+          "hash": "13307404459552072579"
+        },
+        {
+          "file": "libs/contracts/protos/user.proto",
+          "hash": "13184058271334980510"
+        },
+        {
+          "file": "libs/contracts/scripts/gen.sh",
+          "hash": "15178515044315254857"
+        },
+        {
+          "file": "nx.json",
+          "hash": "8885704300454957753"
+        },
+        {
+          "file": "package.json",
+          "hash": "14802910044968561221",
+          "deps": [
+            "npm:@changesets/cli",
+            "npm:@eslint/compat",
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@nestjs/cli",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@nx/esbuild",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/jest",
+            "npm:@nx/js",
+            "npm:@nx/node",
+            "npm:@nx/webpack",
+            "npm:@nx/workspace",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/uuid",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:esbuild",
+            "npm:jest",
+            "npm:kafkajs",
+            "npm:nx",
+            "npm:prisma",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:typescript",
+            "npm:@azure/storage-blob",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/microservices",
+            "npm:@nestjs/platform-express",
+            "npm:@nestjs/platform-socket.io",
+            "npm:@nestjs/websockets",
+            "npm:@opentelemetry/auto-instrumentations-node",
+            "npm:@opentelemetry/exporter-trace-otlp-proto",
+            "npm:@opentelemetry/sdk-node",
+            "npm:@prisma/client",
+            "npm:axios",
+            "npm:class-transformer",
+            "npm:class-validator",
+            "npm:eslint",
+            "npm:reflect-metadata",
+            "npm:rxjs",
+            "npm:socket.io",
+            "npm:tslib",
+            "npm:uuid"
+          ]
+        },
+        {
+          "file": "pnpm-lock.yaml",
+          "hash": "10917320840333682848"
+        },
+        {
+          "file": "pnpm-workspace.yaml",
+          "hash": "9304611427599239727"
+        },
+        {
+          "file": "static/environment.js",
+          "hash": "11440985774146360579"
+        },
+        {
+          "file": "static/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "static/main.js",
+          "hash": "17083669762597130512"
+        },
+        {
+          "file": "static/runtime.js",
+          "hash": "14980783667260047515"
+        },
+        {
+          "file": "static/styles.css",
+          "hash": "5790686815247881049"
+        },
+        {
+          "file": "static/styles.js",
+          "hash": "16803620677878581351"
+        },
+        {
+          "file": "test-event-flow.js",
+          "hash": "5081290652612559549",
+          "deps": [
+            "npm:kafkajs"
+          ]
+        },
+        {
+          "file": "test-full-integration.js",
+          "hash": "9175158016607399164",
+          "deps": [
+            "npm:kafkajs"
+          ]
+        },
+        {
+          "file": "test-kafka-connection.js",
+          "hash": "1123464627218709358",
+          "deps": [
+            "npm:kafkajs"
+          ]
+        },
+        {
+          "file": "test-kafka-events.js",
+          "hash": "14774745275770379331",
+          "deps": [
+            "npm:kafkajs"
+          ]
+        },
+        {
+          "file": "test-meeting-pgadmin.sql",
+          "hash": "3306138594500881948"
+        },
+        {
+          "file": "test-transcripts-pgadmin.sql",
+          "hash": "4653859738460395404"
+        },
+        {
+          "file": "tools/scripts/build-affected-images.js",
+          "hash": "11844307349742051654"
+        },
+        {
+          "file": "tools/scripts/setup-buildx.sh",
+          "hash": "8247692336214499420"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "9920430480523375554"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "11362881344892729644"
+        },
+        {
+          "file": "workspace.json",
+          "hash": "8506259227964427690"
+        }
+      ],
+      "transcripts": [
+        {
+          "file": "apps/transcripts/Dockerfile",
+          "hash": "1771291531861283363"
+        },
+        {
+          "file": "apps/transcripts/jest.config.ts",
+          "hash": "11735204768472127447"
+        },
+        {
+          "file": "apps/transcripts/prisma/migrations/20251030131735_initial_transcripts_schema/migration.sql",
+          "hash": "16892627595018244764"
+        },
+        {
+          "file": "apps/transcripts/prisma/migrations/migration_lock.toml",
+          "hash": "872437952673290735"
+        },
+        {
+          "file": "apps/transcripts/prisma/schema.prisma",
+          "hash": "13662267130247595343"
+        },
+        {
+          "file": "apps/transcripts/project.json",
+          "hash": "1690302526522660708"
+        },
+        {
+          "file": "apps/transcripts/src/app/app.module.ts",
+          "hash": "5767063944126348021",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/audio-processor.service.ts",
+          "hash": "2650265972849221033",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/storage.service.ts",
+          "hash": "11432693064746816443",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@azure/storage-blob"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/transcript-event.handler.spec.ts",
+          "hash": "4272915623234818536"
+        },
+        {
+          "file": "apps/transcripts/src/app/transcript-event.handler.ts",
+          "hash": "7561368591621967500",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:uuid"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/transcripts.controller.ts",
+          "hash": "395317992459134133",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/transcripts.service.ts",
+          "hash": "1882980109385983443",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/environments/environment.prod.ts",
+          "hash": "7392027940625138016"
+        },
+        {
+          "file": "apps/transcripts/src/environments/environment.ts",
+          "hash": "7306145146943703165"
+        },
+        {
+          "file": "apps/transcripts/src/main.ts",
+          "hash": "12999430184363856584",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/tests/kafka.consumer.spec.ts",
+          "hash": "5689840342391467121",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/tsconfig.app.json",
+          "hash": "12680475760613811613"
+        },
+        {
+          "file": "apps/transcripts/tsconfig.json",
+          "hash": "5833376215062834929"
+        },
+        {
+          "file": "apps/transcripts/tsconfig.spec.json",
+          "hash": "3555860897547211654"
+        }
+      ],
+      "meeting": [
+        {
+          "file": "apps/meeting/Dockerfile",
+          "hash": "14575303187328671848"
+        },
+        {
+          "file": "apps/meeting/jest.config.ts",
+          "hash": "5124092070198370663"
+        },
+        {
+          "file": "apps/meeting/prisma/migrations/20251030131636_initial_meeting_schema/migration.sql",
+          "hash": "2595475989104180886"
+        },
+        {
+          "file": "apps/meeting/prisma/migrations/migration_lock.toml",
+          "hash": "872437952673290735"
+        },
+        {
+          "file": "apps/meeting/prisma/schema.prisma",
+          "hash": "16478551207114802450"
+        },
+        {
+          "file": "apps/meeting/project.json",
+          "hash": "3064274333310579627"
+        },
+        {
+          "file": "apps/meeting/src/app/app.module.ts",
+          "hash": "12930055181433745792",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/app/meeting.controller.ts",
+          "hash": "10965981669486817363",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/app/meeting.service.spec.ts",
+          "hash": "17253691422469746365",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/app/meeting.service.ts",
+          "hash": "16488844565591144242",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:uuid"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/app/webrtc.gateway.ts",
+          "hash": "16659042743403799518",
+          "deps": [
+            "npm:@nestjs/websockets",
+            "npm:socket.io"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/environments/environment.prod.ts",
+          "hash": "11242065004460447249"
+        },
+        {
+          "file": "apps/meeting/src/environments/environment.ts",
+          "hash": "5837815252196753001"
+        },
+        {
+          "file": "apps/meeting/src/main.ts",
+          "hash": "15469451853095303935",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/tests/kafka.producer.spec.ts",
+          "hash": "4592152785292395123",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/meeting/tsconfig.app.json",
+          "hash": "12680475760613811613"
+        },
+        {
+          "file": "apps/meeting/tsconfig.json",
+          "hash": "5833376215062834929"
+        },
+        {
+          "file": "apps/meeting/tsconfig.spec.json",
+          "hash": "3555860897547211654"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "193469279538524708"
+}
