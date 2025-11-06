@@ -1,7 +1,7 @@
 const { Kafka } = require('kafkajs');
 
 async function testKafkaEventFlow() {
-  console.log('🚀 Starting Kafka Event Flow Test...');
+  console.log('Starting Kafka Event Flow Test...');
 
   const kafka = new Kafka({
     clientId: 'test-client',
@@ -17,13 +17,13 @@ async function testKafkaEventFlow() {
 
   try {
     // Connect producer and consumer
-    console.log('📡 Connecting to Kafka...');
+  console.log('Connecting to Kafka...');
     await producer.connect();
     await consumer.connect();
 
     // Subscribe to topics
-    console.log('📮 Subscribing to topics...');
-    await consumer.subscribe({ topics: ['meeting.created', 'meeting.ended', 'meeting.participant.joined'] });
+  console.log('Subscribing to topics...');
+  await consumer.subscribe({ topics: ['meeting.created', 'meeting.ended', 'meeting.participant.joined'] });
 
     // Set up message handler
     let receivedMessages = [];
@@ -36,7 +36,7 @@ async function testKafkaEventFlow() {
           key: message.key?.toString(),
           value: JSON.parse(message.value.toString())
         };
-        console.log(`📥 Received event:`, event);
+  console.log(`Received event:`, event);
         receivedMessages.push(event);
       },
     });
@@ -44,8 +44,8 @@ async function testKafkaEventFlow() {
     // Wait a bit for consumer to be ready
     await new Promise(resolve => setTimeout(resolve, 2000));
 
-    // Test 1: Meeting Created Event
-    console.log('\n🎯 Test 1: Producing Meeting Created Event...');
+  // Test 1: Meeting Created Event
+  console.log('\nTest 1: Producing Meeting Created Event...');
     const meetingCreatedEvent = {
       eventId: `test-event-${Date.now()}`,
       eventType: 'meeting.created',
@@ -72,7 +72,7 @@ async function testKafkaEventFlow() {
     });
 
     // Test 2: Participant Joined Event
-    console.log('\n🎯 Test 2: Producing Participant Joined Event...');
+  console.log('\nTest 2: Producing Participant Joined Event...');
     const participantJoinedEvent = {
       eventId: `test-event-${Date.now()}`,
       eventType: 'meeting.participant.joined',
@@ -98,7 +98,7 @@ async function testKafkaEventFlow() {
     });
 
     // Test 3: Meeting Ended Event
-    console.log('\n🎯 Test 3: Producing Meeting Ended Event...');
+  console.log('\nTest 3: Producing Meeting Ended Event...');
     const meetingEndedEvent = {
       eventId: `test-event-${Date.now()}`,
       eventType: 'meeting.ended',
@@ -124,29 +124,29 @@ async function testKafkaEventFlow() {
     });
 
     // Wait for messages to be processed
-    console.log('\n⏳ Waiting for message processing...');
+  console.log('\nWaiting for message processing...');
     await new Promise(resolve => setTimeout(resolve, 3000));
 
     // Results
-    console.log('\n📊 Test Results:');
-    console.log(`✅ Events produced: 3`);
-    console.log(`📥 Events received: ${receivedMessages.length}`);
+    console.log('\nTest Results:');
+    console.log(`Events produced: 3`);
+    console.log(`Events received: ${receivedMessages.length}`);
     
     if (receivedMessages.length > 0) {
-      console.log('\n📋 Received Events Summary:');
+      console.log('\nReceived Events Summary:');
       receivedMessages.forEach((msg, index) => {
         console.log(`  ${index + 1}. Topic: ${msg.topic}, EventType: ${msg.value.eventType}, MeetingId: ${msg.value.data.meetingId}`);
       });
     }
 
-    console.log('\n✅ Kafka Event Flow Test Completed Successfully!');
+    console.log('\nKafka Event Flow Test Completed Successfully!');
     
   } catch (error) {
-    console.error('❌ Kafka Event Flow Test Failed:', error);
+    console.error('Kafka Event Flow Test Failed:', error);
     process.exit(1);
   } finally {
     // Cleanup
-    console.log('\n🧹 Cleaning up connections...');
+    console.log('\nCleaning up connections...');
     await consumer.disconnect();
     await producer.disconnect();
     process.exit(0);

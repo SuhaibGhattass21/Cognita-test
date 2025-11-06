@@ -1,7 +1,7 @@
 const { Kafka } = require('kafkajs');
 
 async function testKafkaConnection() {
-  console.log('🔧 Testing Kafka Connection...');
+  console.log('Testing Kafka Connection...');
 
   // Create client with only localhost:9092
   const kafka = new Kafka({
@@ -12,17 +12,17 @@ async function testKafkaConnection() {
   const admin = kafka.admin();
 
   try {
-    console.log('📡 Connecting to Kafka admin...');
+  console.log('Connecting to Kafka admin...');
     await admin.connect();
 
-    console.log('📋 Listing topics...');
-    const topics = await admin.listTopics();
-    console.log('🎯 Available topics:', topics);
+  console.log('Listing topics...');
+  const topics = await admin.listTopics();
+  console.log('Available topics:', topics);
 
-    console.log('✅ Kafka connection successful!');
+  console.log('Kafka connection successful!');
     
-    // Test topic creation
-    console.log('🏗️ Creating test topic...');
+  // Test topic creation
+  console.log('Creating test topic...');
     await admin.createTopics({
       topics: [{
         topic: 'test-connection',
@@ -31,14 +31,14 @@ async function testKafkaConnection() {
       }]
     });
     
-    console.log('✅ Test topic created successfully!');
+  console.log('Test topic created successfully!');
     
   } catch (error) {
-    console.error('❌ Kafka connection test failed:', error.message);
+    console.error('Kafka connection test failed:', error.message);
     console.error('Error details:', error);
   } finally {
     await admin.disconnect();
-    console.log('🔌 Disconnected from Kafka admin');
+    console.log('Disconnected from Kafka admin');
   }
 }
 

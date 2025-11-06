@@ -1,7 +1,7 @@
 const { Kafka } = require('kafkajs');
 
 async function testMeetingEventFlow() {
-  console.log('🚀 Testing Meeting → Transcripts Event Flow...');
+  console.log('Testing Meeting -> Transcripts Event Flow...');
 
   const kafka = new Kafka({
     clientId: 'event-flow-test',
@@ -12,13 +12,13 @@ async function testMeetingEventFlow() {
   const consumer = kafka.consumer({ groupId: 'transcript-test-group' });
 
   try {
-    // Connect
-    console.log('📡 Connecting to Kafka...');
+  // Connect
+  console.log('Connecting to Kafka...');
     await producer.connect();
     await consumer.connect();
 
-    // Subscribe to meeting events
-    console.log('📮 Setting up consumer for meeting events...');
+  // Subscribe to meeting events
+  console.log('Setting up consumer for meeting events...');
     await consumer.subscribe({ topic: 'meeting.created' });
 
     // Set up message handler
@@ -26,15 +26,15 @@ async function testMeetingEventFlow() {
     await consumer.run({
       eachMessage: async ({ topic, partition, message }) => {
         const event = JSON.parse(message.value.toString());
-        console.log(`📥 Transcripts service received event:`, {
+  console.log(`Transcripts service received event:`, {
           topic,
           eventType: event.eventType,
           meetingId: event.data?.meetingId,
           meetingTitle: event.data?.title
         });
 
-        // Simulate transcript session creation
-        console.log('🎬 Creating transcript session for meeting:', event.data?.meetingId);
+  // Simulate transcript session creation
+  console.log('Creating transcript session for meeting:', event.data?.meetingId);
         eventReceived = true;
       },
     });
@@ -42,8 +42,8 @@ async function testMeetingEventFlow() {
     // Wait for consumer to be ready
     await new Promise(resolve => setTimeout(resolve, 2000));
 
-    // Simulate meeting service producing event
-    console.log('🎯 Meeting service: Creating new meeting...');
+  // Simulate meeting service producing event
+  console.log('Meeting service: Creating new meeting...');
     const meetingEvent = {
       eventId: `event-${Date.now()}`,
       eventType: 'meeting.created',
@@ -67,29 +67,29 @@ async function testMeetingEventFlow() {
       }]
     });
 
-    console.log('✅ Meeting event published successfully');
+  console.log('Meeting event published successfully');
 
-    // Wait for event processing
-    console.log('⏳ Waiting for transcript service to process event...');
+  // Wait for event processing
+  console.log('Waiting for transcript service to process event...');
     await new Promise(resolve => setTimeout(resolve, 3000));
 
     if (eventReceived) {
-      console.log('✅ EVENT FLOW TEST SUCCESSFUL!');
-      console.log('📋 Summary:');
+  console.log('EVENT FLOW TEST SUCCESSFUL!');
+  console.log('Summary:');
       console.log('  - Meeting service published meeting.created event');
       console.log('  - Transcripts service received and processed event');
       console.log('  - Real-time event flow working correctly');
     } else {
-      console.log('❌ EVENT FLOW TEST FAILED!');
+  console.log('EVENT FLOW TEST FAILED!');
       console.log('  - Event was published but not received by consumer');
     }
 
   } catch (error) {
-    console.error('❌ Event flow test failed:', error);
+    console.error('Event flow test failed:', error);
   } finally {
     await consumer.disconnect();
     await producer.disconnect();
-    console.log('🔌 Kafka connections closed');
+    console.log('Kafka connections closed');
   }
 }
 

@@ -82,10 +82,10 @@ export class TranscriptEventHandler implements OnModuleInit {
 
       this.logger.log(`[transcripts] Stored new transcript session for meeting_id=${event.data.meetingId}`);
 
-      console.log(`🎙️ Transcript session initialized for meeting: ${event.data.title}`);
-      console.log(`   - Transcript ID: ${transcriptSession.id}`);
-      console.log(`   - Meeting ID: ${event.data.meetingId}`);
-      console.log(`   - Participants: ${event.data.participants.length}`);
+  console.log(`Transcript session initialized for meeting: ${event.data.title}`);
+  console.log(`   - Transcript ID: ${transcriptSession.id}`);
+  console.log(`   - Meeting ID: ${event.data.meetingId}`);
+  console.log(`   - Participants: ${event.data.participants.length}`);
 
       // Publish transcript started event
       const transcriptStartedEvent: TranscriptStartedEvent = {
@@ -144,10 +144,10 @@ export class TranscriptEventHandler implements OnModuleInit {
         }
       });
 
-      console.log(`📄 Transcript finalized for meeting: ${event.data.title}`);
-      console.log(`   - Duration: ${event.data.duration} seconds`);
-      console.log(`   - Storage: transcripts/${event.data.tenantId}/${event.data.meetingId}/final.json`);
-      console.log(`   - Participants analyzed: ${event.data.participantCount}`);
+  console.log(`Transcript finalized for meeting: ${event.data.title}`);
+  console.log(`   - Duration: ${event.data.duration} seconds`);
+  console.log(`   - Storage: transcripts/${event.data.tenantId}/${event.data.meetingId}/final.json`);
+  console.log(`   - Participants analyzed: ${event.data.participantCount}`);
 
       // Publish transcript completed event
       const transcriptCompletedEvent: TranscriptCompletedEvent = {

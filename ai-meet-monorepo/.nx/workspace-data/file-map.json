@@ -91,14 +91,14 @@
         },
         {
           "file": "apps/meeting/src/main.ts",
-          "hash": "15469451853095303935",
+          "hash": "3139192497561513894",
           "deps": [
             "npm:@nestjs/core"
           ]
         },
         {
           "file": "apps/meeting/src/tests/kafka.producer.spec.ts",
-          "hash": "4592152785292395123",
+          "hash": "17062196207606711763",
           "deps": [
             "npm:@nestjs/testing",
             "npm:@nestjs/common"
@@ -152,14 +152,14 @@
         },
         {
           "file": "e2e-database-test.js",
-          "hash": "8401319872443601202",
+          "hash": "9774116670301955224",
           "deps": [
             "npm:axios"
           ]
         },
         {
           "file": "e2e-kafka-test.js",
-          "hash": "11432200439025849956",
+          "hash": "14869454630730440658",
           "deps": [
             "npm:kafkajs"
           ]
@@ -211,7 +211,7 @@
         },
         {
           "file": "libs/common/db/connection-test.ts",
-          "hash": "7204193734480206"
+          "hash": "12720835311334429217"
         },
         {
           "file": "libs/common/db/database.module.ts",
@@ -393,28 +393,28 @@
         },
         {
           "file": "test-event-flow.js",
-          "hash": "5081290652612559549",
+          "hash": "13940418021928526524",
           "deps": [
             "npm:kafkajs"
           ]
         },
         {
           "file": "test-full-integration.js",
-          "hash": "9175158016607399164",
+          "hash": "7219429197370503803",
           "deps": [
             "npm:kafkajs"
           ]
         },
         {
           "file": "test-kafka-connection.js",
-          "hash": "1123464627218709358",
+          "hash": "3404452161204142089",
           "deps": [
             "npm:kafkajs"
           ]
         },
         {
           "file": "test-kafka-events.js",
-          "hash": "14774745275770379331",
+          "hash": "3632575299618093996",
           "deps": [
             "npm:kafkajs"
           ]
@@ -501,7 +501,7 @@
         },
         {
           "file": "apps/transcripts/src/app/transcript-event.handler.ts",
-          "hash": "7561368591621967500",
+          "hash": "2064775609307342838",
           "deps": [
             "npm:@nestjs/common",
             "npm:uuid"
@@ -516,7 +516,7 @@
         },
         {
           "file": "apps/transcripts/src/app/transcripts.service.ts",
-          "hash": "1882980109385983443",
+          "hash": "8677976672788857832",
           "deps": [
             "npm:@nestjs/common"
           ]
@@ -531,14 +531,14 @@
         },
         {
           "file": "apps/transcripts/src/main.ts",
-          "hash": "12999430184363856584",
+          "hash": "11850371467310399805",
           "deps": [
             "npm:@nestjs/core"
           ]
         },
         {
           "file": "apps/transcripts/src/tests/kafka.consumer.spec.ts",
-          "hash": "5689840342391467121",
+          "hash": "17567401998378087480",
           "deps": [
             "npm:@nestjs/testing",
             "npm:@nestjs/common"

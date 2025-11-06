@@ -61,13 +61,13 @@ export async function testAllConnections(): Promise<ConnectionTestResult[]> {
  * Simple connection test script for CLI usage
  */
 export async function runConnectionTest() {
-  console.log('🔍 Testing database connections...\n');
+  console.log('Testing database connections...\n');
   
   const results = await testAllConnections();
   
   results.forEach(result => {
-    const status = result.connected ? '✅ CONNECTED' : '❌ FAILED';
-    console.log(`${status} - ${result.service.toUpperCase()} Database`);
+  const status = result.connected ? 'CONNECTED' : 'FAILED';
+  console.log(`${status} - ${result.service.toUpperCase()} Database`);
     console.log(`   Response Time: ${result.responseTime}ms`);
     console.log(`   Timestamp: ${result.timestamp}`);
     
@@ -78,7 +78,7 @@ export async function runConnectionTest() {
   });
   
   const allConnected = results.every(r => r.connected);
-  console.log(allConnected ? '🎉 All databases connected successfully!' : '⚠️  Some databases failed to connect');
+  console.log(allConnected ? 'All databases connected successfully!' : 'Some databases failed to connect');
   
   return allConnected;
 }

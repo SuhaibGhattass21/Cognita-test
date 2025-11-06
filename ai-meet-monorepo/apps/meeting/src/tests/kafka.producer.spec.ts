@@ -30,7 +30,7 @@ describe('Kafka Producer Connection Test', () => {
     // Initialize the service manually for testing
     await kafkaService.onModuleInit();
     
-    logger.log('🔧 Kafka service initialized for producer testing');
+  logger.log('Kafka service initialized for producer testing');
   });
 
   afterAll(async () => {
@@ -50,7 +50,7 @@ describe('Kafka Producer Connection Test', () => {
         // Check connection status
         const isConnected = await kafkaService.getConnectionStatus();
         expect(isConnected).toBe(true);
-        logger.log('🔗 Kafka connection established');
+  logger.log('Kafka connection established');
 
         // Create a test event
         const testEvent = {
@@ -78,13 +78,13 @@ describe('Kafka Producer Connection Test', () => {
         expect(result.partition).toBeDefined();
         expect(result.offset).toBeDefined();
 
-        logger.log('✅ Producer connected and sent message successfully');
-        logger.log(`📤 Message sent to partition ${result.partition}, offset ${result.offset}`);
-        logger.log(`📋 Event ID: ${testEvent.eventId}`);
+  logger.log('Producer connected and sent message successfully');
+  logger.log(`Message sent to partition ${result.partition}, offset ${result.offset}`);
+  logger.log(`Event ID: ${testEvent.eventId}`);
         
       } catch (error) {
-        const logger = new Logger('ProducerError');
-        logger.error('❌ Producer connection failed:', error);
+  const logger = new Logger('ProducerError');
+  logger.error('Producer connection failed:', error);
         throw error;
       }
     }, 30000); // 30 second timeout for Kafka operations
@@ -106,7 +106,7 @@ describe('Kafka Producer Connection Test', () => {
         try {
           await timeoutKafkaService.onModuleInit();
         } catch (error) {
-          logger.log('✅ Timeout handled gracefully');
+          logger.log('Timeout handled gracefully');
           expect(error).toBeDefined();
           return;
         }
@@ -118,8 +118,8 @@ describe('Kafka Producer Connection Test', () => {
         fail('Expected connection to timeout but it succeeded');
         
       } catch (error) {
-        const logger = new Logger('ExpectedTimeoutError');
-        logger.log('✅ Connection timeout caught and handled properly');
+  const logger = new Logger('ExpectedTimeoutError');
+  logger.log('Connection timeout caught and handled properly');
         expect(error).toBeDefined();
       }
     }, 15000);
@@ -143,11 +143,11 @@ describe('Kafka Producer Connection Test', () => {
         );
 
         // Should still attempt to send but may have issues
-        logger.log('📊 Invalid event result:', JSON.stringify(result, null, 2));
+  logger.log('Invalid event result:', JSON.stringify(result, null, 2));
         expect(result).toBeDefined();
         
       } catch (error) {
-        logger.log('✅ Invalid event error handled gracefully');
+  logger.log('Invalid event error handled gracefully');
         expect(error).toBeDefined();
       }
     });

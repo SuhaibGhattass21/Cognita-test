@@ -41,7 +41,7 @@ export class TranscriptsService {
     speakerId?: string;
   }): Promise<{ success: boolean; transcriptId?: string }> {
     try {
-      console.log(`🎙️ Processing audio chunk for meeting ${data.meetingId}`);
+  console.log(`Processing audio chunk for meeting ${data.meetingId}`);
       
       // Decode base64 audio
       const audioBuffer = Buffer.from(data.audioChunk, 'base64');
@@ -87,10 +87,10 @@ export class TranscriptsService {
       // Store in Azure Blob Storage
       await this.storage.storeTranscript(data.meetingId, transcript);
 
-      console.log(`✅ Transcribed: "${transcriptionResult.text.substring(0, 50)}..."`);
+  console.log(`Transcribed: "${transcriptionResult.text.substring(0, 50)}..."`);
       return { success: true, transcriptId: segment.id };
     } catch (error) {
-      console.error('❌ Error processing audio chunk:', error);
+  console.error('Error processing audio chunk:', error);
       return { success: false };
     }
   }
@@ -165,7 +165,7 @@ export class TranscriptsService {
     // Generate formatted export (stubbed for now)
     const exportUrl = await this.storage.exportTranscript(meetingId, transcript, format);
     
-    console.log(`📄 Exported transcript for meeting ${meetingId} as ${format}`);
+  console.log(`Exported transcript for meeting ${meetingId} as ${format}`);
     return { success: true, exportUrl };
   }
 }
