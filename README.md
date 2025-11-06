@@ -223,11 +223,4 @@ docker compose down -v                                           # tear down and
 - Kafka communication: verified end-to-end for meeting -> transcripts
 - Docker network & healthchecks: working for local dev
 
-If you want, I can open a small PR that adds these docs to the repository and commits the test fixes referenced in `FIXLOG.md`.
-
----
-
-## Contact / Maintainers
-
-If you have questions about the repo structure or need help running anything locally, open an issue or ping the repo maintainer.
 
