@@ -117,115 +117,6 @@
           "hash": "3555860897547211654"
         }
       ],
-      "transcripts": [
-        {
-          "file": "apps/transcripts/Dockerfile",
-          "hash": "1771291531861283363"
-        },
-        {
-          "file": "apps/transcripts/jest.config.ts",
-          "hash": "11735204768472127447"
-        },
-        {
-          "file": "apps/transcripts/prisma/migrations/20251030131735_initial_transcripts_schema/migration.sql",
-          "hash": "14907152648113487232"
-        },
-        {
-          "file": "apps/transcripts/prisma/migrations/migration_lock.toml",
-          "hash": "2102472203520572126"
-        },
-        {
-          "file": "apps/transcripts/prisma/schema.prisma",
-          "hash": "12647394640757895408"
-        },
-        {
-          "file": "apps/transcripts/project.json",
-          "hash": "1690302526522660708"
-        },
-        {
-          "file": "apps/transcripts/src/app/app.module.ts",
-          "hash": "5767063944126348021",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/transcripts/src/app/audio-processor.service.ts",
-          "hash": "2650265972849221033",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/transcripts/src/app/storage.service.ts",
-          "hash": "11432693064746816443",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@azure/storage-blob"
-          ]
-        },
-        {
-          "file": "apps/transcripts/src/app/transcript-event.handler.spec.ts",
-          "hash": "4272915623234818536"
-        },
-        {
-          "file": "apps/transcripts/src/app/transcript-event.handler.ts",
-          "hash": "7561368591621967500",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:uuid"
-          ]
-        },
-        {
-          "file": "apps/transcripts/src/app/transcripts.controller.ts",
-          "hash": "395317992459134133",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/transcripts/src/app/transcripts.service.ts",
-          "hash": "1882980109385983443",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/transcripts/src/environments/environment.prod.ts",
-          "hash": "7392027940625138016"
-        },
-        {
-          "file": "apps/transcripts/src/environments/environment.ts",
-          "hash": "7306145146943703165"
-        },
-        {
-          "file": "apps/transcripts/src/main.ts",
-          "hash": "12999430184363856584",
-          "deps": [
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "apps/transcripts/src/tests/kafka.consumer.spec.ts",
-          "hash": "5689840342391467121",
-          "deps": [
-            "npm:@nestjs/testing",
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/transcripts/tsconfig.app.json",
-          "hash": "12680475760613811613"
-        },
-        {
-          "file": "apps/transcripts/tsconfig.json",
-          "hash": "5833376215062834929"
-        },
-        {
-          "file": "apps/transcripts/tsconfig.spec.json",
-          "hash": "3555860897547211654"
-        }
-      ],
       "ai-meet-monorepo": [
         {
           "file": ".changeset/README.md",
@@ -245,7 +136,7 @@
         },
         {
           "file": ".gitignore",
-          "hash": "4161776197389225699"
+          "hash": "10310523496526818501"
         },
         {
           "file": "docker-compose.yml",
@@ -555,6 +446,115 @@
         {
           "file": "workspace.json",
           "hash": "8506259227964427690"
+        }
+      ],
+      "transcripts": [
+        {
+          "file": "apps/transcripts/Dockerfile",
+          "hash": "1771291531861283363"
+        },
+        {
+          "file": "apps/transcripts/jest.config.ts",
+          "hash": "11735204768472127447"
+        },
+        {
+          "file": "apps/transcripts/prisma/migrations/20251030131735_initial_transcripts_schema/migration.sql",
+          "hash": "14907152648113487232"
+        },
+        {
+          "file": "apps/transcripts/prisma/migrations/migration_lock.toml",
+          "hash": "2102472203520572126"
+        },
+        {
+          "file": "apps/transcripts/prisma/schema.prisma",
+          "hash": "12647394640757895408"
+        },
+        {
+          "file": "apps/transcripts/project.json",
+          "hash": "1690302526522660708"
+        },
+        {
+          "file": "apps/transcripts/src/app/app.module.ts",
+          "hash": "5767063944126348021",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/audio-processor.service.ts",
+          "hash": "2650265972849221033",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/storage.service.ts",
+          "hash": "11432693064746816443",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@azure/storage-blob"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/transcript-event.handler.spec.ts",
+          "hash": "4272915623234818536"
+        },
+        {
+          "file": "apps/transcripts/src/app/transcript-event.handler.ts",
+          "hash": "7561368591621967500",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:uuid"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/transcripts.controller.ts",
+          "hash": "395317992459134133",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/app/transcripts.service.ts",
+          "hash": "1882980109385983443",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/environments/environment.prod.ts",
+          "hash": "7392027940625138016"
+        },
+        {
+          "file": "apps/transcripts/src/environments/environment.ts",
+          "hash": "7306145146943703165"
+        },
+        {
+          "file": "apps/transcripts/src/main.ts",
+          "hash": "12999430184363856584",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/transcripts/src/tests/kafka.consumer.spec.ts",
+          "hash": "5689840342391467121",
+          "deps": [
+            "npm:@nestjs/testing",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/transcripts/tsconfig.app.json",
+          "hash": "12680475760613811613"
+        },
+        {
+          "file": "apps/transcripts/tsconfig.json",
+          "hash": "5833376215062834929"
+        },
+        {
+          "file": "apps/transcripts/tsconfig.spec.json",
+          "hash": "3555860897547211654"
         }
       ]
     }

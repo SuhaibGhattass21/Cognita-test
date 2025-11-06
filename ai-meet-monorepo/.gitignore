@@ -12,7 +12,7 @@ dist/
 # IDEs and editors
 .idea/
 .vscode/
-.vscode-test/
+.vscode-test/ 
 
 # System files
 .DS_Store

@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx build transcripts --prod",
-    "startTime": "2025-11-02T20:07:14.264Z",
-    "endTime": "2025-11-02T20:07:17.482Z",
+    "command": "nx build transcripts --verbose",
+    "startTime": "2025-11-06T21:11:06.222Z",
+    "endTime": "2025-11-06T21:11:09.785Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "transcripts:build:production",
+      "taskId": "transcripts:build",
       "target": "build",
       "projectName": "transcripts",
-      "hash": "17145987344472920968",
-      "startTime": "2025-11-02T20:07:14.332Z",
-      "endTime": "2025-11-02T20:07:17.466Z",
+      "hash": "16730854737903557911",
+      "startTime": "2025-11-06T21:11:06.298Z",
+      "endTime": "2025-11-06T21:11:09.768Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
