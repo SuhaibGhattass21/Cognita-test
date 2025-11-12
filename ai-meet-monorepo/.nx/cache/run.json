@@ -1,18 +1,106 @@
 {
   "run": {
-    "command": "nx test meeting --testNamePattern=Kafka",
-    "startTime": "2025-11-12T12:20:30.739Z",
-    "endTime": "2025-11-12T12:20:34.425Z",
+    "command": "nx run-many -t lint test build --parallel=1 --verbose",
+    "startTime": "2025-11-12T12:53:11.784Z",
+    "endTime": "2025-11-12T12:56:42.976Z",
     "inner": false
   },
   "tasks": [
     {
+      "taskId": "ai-meet-monorepo:build",
+      "target": "build",
+      "projectName": "ai-meet-monorepo",
+      "hash": "2100881406854172968",
+      "startTime": "2025-11-12T12:53:11.909Z",
+      "endTime": "2025-11-12T12:54:15.082Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "ai-meet-monorepo:lint",
+      "target": "lint",
+      "projectName": "ai-meet-monorepo",
+      "hash": "8465468221786938959",
+      "startTime": "2025-11-12T12:54:15.120Z",
+      "endTime": "2025-11-12T12:55:17.885Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "ai-meet-monorepo:test",
+      "target": "test",
+      "projectName": "ai-meet-monorepo",
+      "hash": "7358039542375913450",
+      "startTime": "2025-11-12T12:55:17.887Z",
+      "endTime": "2025-11-12T12:56:20.777Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "transcripts:test",
+      "target": "test",
+      "projectName": "transcripts",
+      "hash": "2824942869945840951",
+      "startTime": "2025-11-12T12:56:20.780Z",
+      "endTime": "2025-11-12T12:56:20.818Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "transcripts:lint",
+      "target": "lint",
+      "projectName": "transcripts",
+      "hash": "5954922580791473745",
+      "startTime": "2025-11-12T12:56:20.820Z",
+      "endTime": "2025-11-12T12:56:27.812Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "meeting:lint",
+      "target": "lint",
+      "projectName": "meeting",
+      "hash": "13796473463624729907",
+      "startTime": "2025-11-12T12:56:27.814Z",
+      "endTime": "2025-11-12T12:56:34.807Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
       "taskId": "meeting:test",
       "target": "test",
       "projectName": "meeting",
-      "hash": "10974675794383336536",
-      "startTime": "2025-11-12T12:20:30.820Z",
-      "endTime": "2025-11-12T12:20:34.420Z",
+      "hash": "10819721118988204981",
+      "startTime": "2025-11-12T12:56:34.821Z",
+      "endTime": "2025-11-12T12:56:34.826Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "meeting:build",
+      "target": "build",
+      "projectName": "meeting",
+      "hash": "5924872514650361992",
+      "startTime": "2025-11-12T12:56:34.828Z",
+      "endTime": "2025-11-12T12:56:38.875Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "transcripts:build",
+      "target": "build",
+      "projectName": "transcripts",
+      "hash": "15121159348051783562",
+      "startTime": "2025-11-12T12:56:38.891Z",
+      "endTime": "2025-11-12T12:56:42.961Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

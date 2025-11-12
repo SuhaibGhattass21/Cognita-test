@@ -1,4 +1,6 @@
-const { Kafka } = require('kafkajs');
+import { Kafka } from 'kafkajs';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
 async function testMeetingEventFlow() {
   console.log('Testing Meeting -> Transcripts Event Flow...');

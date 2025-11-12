@@ -2546,7 +2546,7 @@
   },
   {
     "source": "npm:@changesets/config",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -2621,7 +2621,7 @@
   },
   {
     "source": "npm:@changesets/git",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -3151,7 +3151,7 @@
   },
   {
     "source": "npm:@jest/core",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -3781,7 +3781,7 @@
   },
   {
     "source": "npm:@jest/transform@29.7.0",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -3856,7 +3856,7 @@
   },
   {
     "source": "npm:@jest/transform@30.2.0",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -7026,7 +7026,7 @@
   },
   {
     "source": "npm:@parcel/watcher",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -10596,7 +10596,7 @@
   },
   {
     "source": "npm:external-editor",
-    "target": "npm:tmp@0.0.33",
+    "target": "npm:tmp",
     "type": "static"
   },
   {
@@ -10626,7 +10626,7 @@
   },
   {
     "source": "npm:fast-glob",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -11406,7 +11406,7 @@
   },
   {
     "source": "npm:http-proxy-middleware",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -12201,7 +12201,7 @@
   },
   {
     "source": "npm:jest-config@29.7.0",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -12331,7 +12331,7 @@
   },
   {
     "source": "npm:jest-config@30.2.0",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -12576,7 +12576,7 @@
   },
   {
     "source": "npm:jest-haste-map@29.7.0",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -12631,7 +12631,7 @@
   },
   {
     "source": "npm:jest-haste-map@30.2.0",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -12731,7 +12731,7 @@
   },
   {
     "source": "npm:jest-message-util@29.7.0",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -12776,7 +12776,7 @@
   },
   {
     "source": "npm:jest-message-util@30.2.0",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -14041,7 +14041,7 @@
   },
   {
     "source": "npm:lint-staged",
-    "target": "npm:micromatch@4.0.5",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {
@@ -14225,22 +14225,12 @@
     "type": "static"
   },
   {
-    "source": "npm:micromatch@4.0.5",
+    "source": "npm:micromatch",
     "target": "npm:braces",
     "type": "static"
   },
   {
-    "source": "npm:micromatch@4.0.5",
-    "target": "npm:picomatch@2.3.1",
-    "type": "static"
-  },
-  {
-    "source": "npm:micromatch@4.0.8",
-    "target": "npm:braces",
-    "type": "static"
-  },
-  {
-    "source": "npm:micromatch@4.0.8",
+    "source": "npm:micromatch",
     "target": "npm:picomatch@2.3.1",
     "type": "static"
   },
@@ -14511,7 +14501,7 @@
   },
   {
     "source": "npm:nx",
-    "target": "npm:tmp@0.2.5",
+    "target": "npm:tmp",
     "type": "static"
   },
   {
@@ -16715,11 +16705,6 @@
     "type": "static"
   },
   {
-    "source": "npm:tmp@0.0.33",
-    "target": "npm:os-tmpdir",
-    "type": "static"
-  },
-  {
     "source": "npm:to-regex-range",
     "target": "npm:is-number",
     "type": "static"
@@ -16851,7 +16836,7 @@
   },
   {
     "source": "npm:ts-loader",
-    "target": "npm:micromatch@4.0.8",
+    "target": "npm:micromatch",
     "type": "static"
   },
   {

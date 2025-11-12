@@ -9404,18 +9404,9 @@
       "hash": "sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w=="
     }
   },
-  "npm:micromatch@4.0.5": {
+  "npm:micromatch": {
     "type": "npm",
-    "name": "npm:micromatch@4.0.5",
-    "data": {
-      "version": "4.0.5",
-      "packageName": "micromatch",
-      "hash": "sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA=="
-    }
-  },
-  "npm:micromatch@4.0.8": {
-    "type": "npm",
-    "name": "npm:micromatch@4.0.8",
+    "name": "npm:micromatch",
     "data": {
       "version": "4.0.8",
       "packageName": "micromatch",
@@ -9987,15 +9978,6 @@
       "version": "5.4.1",
       "packageName": "ora",
       "hash": "sha512-5b6Y85tPxZZ7QytO+BQzysW31HJku27cRIlkbAXaNx+BdcVi+LlRFmVXzeF6a7JCwJpyw5c4b+YSVImQIrBpuQ=="
-    }
-  },
-  "npm:os-tmpdir": {
-    "type": "npm",
-    "name": "npm:os-tmpdir",
-    "data": {
-      "version": "1.0.2",
-      "packageName": "os-tmpdir",
-      "hash": "sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g=="
     }
   },
   "npm:outdent": {
@@ -12275,18 +12257,9 @@
       "hash": "sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ=="
     }
   },
-  "npm:tmp@0.0.33": {
+  "npm:tmp": {
     "type": "npm",
-    "name": "npm:tmp@0.0.33",
-    "data": {
-      "version": "0.0.33",
-      "packageName": "tmp",
-      "hash": "sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw=="
-    }
-  },
-  "npm:tmp@0.2.5": {
-    "type": "npm",
-    "name": "npm:tmp@0.2.5",
+    "name": "npm:tmp",
     "data": {
       "version": "0.2.5",
       "packageName": "tmp",

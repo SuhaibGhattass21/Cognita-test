@@ -19,6 +19,103 @@
   "fileMap": {
     "nonProjectFiles": [],
     "projectFileMap": {
+      "meeting": [
+        {
+          "file": "apps/meeting/Dockerfile",
+          "hash": "14575303187328671848"
+        },
+        {
+          "file": "apps/meeting/jest.config.ts",
+          "hash": "16522474491305674266"
+        },
+        {
+          "file": "apps/meeting/prisma/migrations/20251030131636_initial_meeting_schema/migration.sql",
+          "hash": "15336129421492443933"
+        },
+        {
+          "file": "apps/meeting/prisma/migrations/migration_lock.toml",
+          "hash": "2102472203520572126"
+        },
+        {
+          "file": "apps/meeting/prisma/schema.prisma",
+          "hash": "11618096813865570568"
+        },
+        {
+          "file": "apps/meeting/project.json",
+          "hash": "3064274333310579627"
+        },
+        {
+          "file": "apps/meeting/src/app/app.module.ts",
+          "hash": "3197173727739241694",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/app/meeting.controller.ts",
+          "hash": "10965981669486817363",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/app/meeting.service.spec.ts",
+          "hash": "14153031129343187430",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/app/meeting.service.ts",
+          "hash": "16488844565591144242",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:uuid"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/app/webrtc.gateway.ts",
+          "hash": "16659042743403799518",
+          "deps": [
+            "npm:@nestjs/websockets",
+            "npm:socket.io"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/environments/environment.prod.ts",
+          "hash": "11242065004460447249"
+        },
+        {
+          "file": "apps/meeting/src/environments/environment.ts",
+          "hash": "5837815252196753001"
+        },
+        {
+          "file": "apps/meeting/src/main.ts",
+          "hash": "3139192497561513894",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/meeting/src/tests/kafka.producer.spec.ts",
+          "hash": "4332362372626730636",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/meeting/tsconfig.app.json",
+          "hash": "12680475760613811613"
+        },
+        {
+          "file": "apps/meeting/tsconfig.json",
+          "hash": "5833376215062834929"
+        },
+        {
+          "file": "apps/meeting/tsconfig.spec.json",
+          "hash": "3555860897547211654"
+        }
+      ],
       "ai-meet-monorepo": [
         {
           "file": ".changeset/README.md",
@@ -306,11 +403,11 @@
         },
         {
           "file": "pnpm-lock.yaml",
-          "hash": "733355515258198880"
+          "hash": "11204205119873134396"
         },
         {
           "file": "pnpm-workspace.yaml",
-          "hash": "5830168501340819262"
+          "hash": "10687804526913287742"
         },
         {
           "file": "static/environment.js",
@@ -338,14 +435,14 @@
         },
         {
           "file": "test-event-flow.js",
-          "hash": "13940418021928526524",
+          "hash": "11486484009299137102",
           "deps": [
             "npm:kafkajs"
           ]
         },
         {
           "file": "test-full-integration.js",
-          "hash": "7219429197370503803",
+          "hash": "9575188154378049439",
           "deps": [
             "npm:kafkajs"
           ]
@@ -494,10 +591,9 @@
         },
         {
           "file": "apps/transcripts/src/tests/kafka.consumer.spec.ts",
-          "hash": "14160265298721957009",
+          "hash": "6400798144683166950",
           "deps": [
-            "npm:@nestjs/testing",
-            "npm:@nestjs/common"
+            "npm:@nestjs/testing"
           ]
         },
         {
@@ -512,105 +608,8 @@
           "file": "apps/transcripts/tsconfig.spec.json",
           "hash": "3555860897547211654"
         }
-      ],
-      "meeting": [
-        {
-          "file": "apps/meeting/Dockerfile",
-          "hash": "14575303187328671848"
-        },
-        {
-          "file": "apps/meeting/jest.config.ts",
-          "hash": "16522474491305674266"
-        },
-        {
-          "file": "apps/meeting/prisma/migrations/20251030131636_initial_meeting_schema/migration.sql",
-          "hash": "15336129421492443933"
-        },
-        {
-          "file": "apps/meeting/prisma/migrations/migration_lock.toml",
-          "hash": "2102472203520572126"
-        },
-        {
-          "file": "apps/meeting/prisma/schema.prisma",
-          "hash": "11618096813865570568"
-        },
-        {
-          "file": "apps/meeting/project.json",
-          "hash": "3064274333310579627"
-        },
-        {
-          "file": "apps/meeting/src/app/app.module.ts",
-          "hash": "3197173727739241694",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/meeting/src/app/meeting.controller.ts",
-          "hash": "10965981669486817363",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/meeting/src/app/meeting.service.spec.ts",
-          "hash": "14153031129343187430",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/meeting/src/app/meeting.service.ts",
-          "hash": "16488844565591144242",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:uuid"
-          ]
-        },
-        {
-          "file": "apps/meeting/src/app/webrtc.gateway.ts",
-          "hash": "16659042743403799518",
-          "deps": [
-            "npm:@nestjs/websockets",
-            "npm:socket.io"
-          ]
-        },
-        {
-          "file": "apps/meeting/src/environments/environment.prod.ts",
-          "hash": "11242065004460447249"
-        },
-        {
-          "file": "apps/meeting/src/environments/environment.ts",
-          "hash": "5837815252196753001"
-        },
-        {
-          "file": "apps/meeting/src/main.ts",
-          "hash": "3139192497561513894",
-          "deps": [
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "apps/meeting/src/tests/kafka.producer.spec.ts",
-          "hash": "8686775438057527797",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/meeting/tsconfig.app.json",
-          "hash": "12680475760613811613"
-        },
-        {
-          "file": "apps/meeting/tsconfig.json",
-          "hash": "5833376215062834929"
-        },
-        {
-          "file": "apps/meeting/tsconfig.spec.json",
-          "hash": "3555860897547211654"
-        }
       ]
     }
   },
-  "externalNodesHash": "4698133796239570546"
+  "externalNodesHash": "8981431169150326889"
 }
