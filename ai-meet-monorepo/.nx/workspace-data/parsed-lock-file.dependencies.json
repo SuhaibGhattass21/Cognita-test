@@ -2546,7 +2546,7 @@
   },
   {
     "source": "npm:@changesets/config",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -2621,7 +2621,7 @@
   },
   {
     "source": "npm:@changesets/git",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -3061,7 +3061,7 @@
   },
   {
     "source": "npm:@jest/core",
-    "target": "npm:ansi-escapes",
+    "target": "npm:ansi-escapes@4.3.2",
     "type": "static"
   },
   {
@@ -3151,7 +3151,7 @@
   },
   {
     "source": "npm:@jest/core",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -3781,7 +3781,7 @@
   },
   {
     "source": "npm:@jest/transform@29.7.0",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -3856,7 +3856,7 @@
   },
   {
     "source": "npm:@jest/transform@30.2.0",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -4981,7 +4981,7 @@
   },
   {
     "source": "npm:@nx/js",
-    "target": "npm:npm-run-path",
+    "target": "npm:npm-run-path@4.0.1",
     "type": "static"
   },
   {
@@ -7026,7 +7026,7 @@
   },
   {
     "source": "npm:@parcel/watcher",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -8215,8 +8215,13 @@
     "type": "static"
   },
   {
-    "source": "npm:ansi-escapes",
+    "source": "npm:ansi-escapes@4.3.2",
     "target": "npm:type-fest@0.21.3",
+    "type": "static"
+  },
+  {
+    "source": "npm:ansi-escapes@5.0.0",
+    "target": "npm:type-fest@1.4.0",
     "type": "static"
   },
   {
@@ -9030,8 +9035,13 @@
     "type": "static"
   },
   {
-    "source": "npm:cli-cursor",
-    "target": "npm:restore-cursor",
+    "source": "npm:cli-cursor@3.1.0",
+    "target": "npm:restore-cursor@3.1.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:cli-cursor@4.0.0",
+    "target": "npm:restore-cursor@4.0.0",
     "type": "static"
   },
   {
@@ -9042,6 +9052,16 @@
   {
     "source": "npm:cli-table3",
     "target": "npm:@colors/colors",
+    "type": "static"
+  },
+  {
+    "source": "npm:cli-truncate",
+    "target": "npm:slice-ansi",
+    "type": "static"
+  },
+  {
+    "source": "npm:cli-truncate",
+    "target": "npm:string-width@5.1.2",
     "type": "static"
   },
   {
@@ -9311,7 +9331,7 @@
   },
   {
     "source": "npm:cross-spawn",
-    "target": "npm:path-key",
+    "target": "npm:path-key@3.1.1",
     "type": "static"
   },
   {
@@ -9626,7 +9646,7 @@
   },
   {
     "source": "npm:cssnano",
-    "target": "npm:lilconfig",
+    "target": "npm:lilconfig@3.1.3",
     "type": "static"
   },
   {
@@ -9646,6 +9666,11 @@
   },
   {
     "source": "npm:debug@4.3.1",
+    "target": "npm:ms@2.1.2",
+    "type": "static"
+  },
+  {
+    "source": "npm:debug@4.3.4",
     "target": "npm:ms@2.1.2",
     "type": "static"
   },
@@ -10260,48 +10285,93 @@
     "type": "static"
   },
   {
-    "source": "npm:execa",
+    "source": "npm:execa@5.1.1",
     "target": "npm:cross-spawn",
     "type": "static"
   },
   {
-    "source": "npm:execa",
+    "source": "npm:execa@5.1.1",
     "target": "npm:get-stream",
     "type": "static"
   },
   {
-    "source": "npm:execa",
-    "target": "npm:human-signals",
+    "source": "npm:execa@5.1.1",
+    "target": "npm:human-signals@2.1.0",
     "type": "static"
   },
   {
-    "source": "npm:execa",
-    "target": "npm:is-stream",
+    "source": "npm:execa@5.1.1",
+    "target": "npm:is-stream@2.0.1",
     "type": "static"
   },
   {
-    "source": "npm:execa",
+    "source": "npm:execa@5.1.1",
     "target": "npm:merge-stream",
     "type": "static"
   },
   {
-    "source": "npm:execa",
-    "target": "npm:npm-run-path",
+    "source": "npm:execa@5.1.1",
+    "target": "npm:npm-run-path@4.0.1",
     "type": "static"
   },
   {
-    "source": "npm:execa",
-    "target": "npm:onetime",
+    "source": "npm:execa@5.1.1",
+    "target": "npm:onetime@5.1.2",
     "type": "static"
   },
   {
-    "source": "npm:execa",
+    "source": "npm:execa@5.1.1",
     "target": "npm:signal-exit@3.0.7",
     "type": "static"
   },
   {
-    "source": "npm:execa",
-    "target": "npm:strip-final-newline",
+    "source": "npm:execa@5.1.1",
+    "target": "npm:strip-final-newline@2.0.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:execa@7.2.0",
+    "target": "npm:cross-spawn",
+    "type": "static"
+  },
+  {
+    "source": "npm:execa@7.2.0",
+    "target": "npm:get-stream",
+    "type": "static"
+  },
+  {
+    "source": "npm:execa@7.2.0",
+    "target": "npm:human-signals@4.3.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:execa@7.2.0",
+    "target": "npm:is-stream@3.0.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:execa@7.2.0",
+    "target": "npm:merge-stream",
+    "type": "static"
+  },
+  {
+    "source": "npm:execa@7.2.0",
+    "target": "npm:npm-run-path@5.3.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:execa@7.2.0",
+    "target": "npm:onetime@6.0.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:execa@7.2.0",
+    "target": "npm:signal-exit@3.0.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:execa@7.2.0",
+    "target": "npm:strip-final-newline@3.0.0",
     "type": "static"
   },
   {
@@ -10556,7 +10626,7 @@
   },
   {
     "source": "npm:fast-glob",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -10946,7 +11016,7 @@
   },
   {
     "source": "npm:gaxios",
-    "target": "npm:is-stream",
+    "target": "npm:is-stream@2.0.1",
     "type": "static"
   },
   {
@@ -11336,7 +11406,7 @@
   },
   {
     "source": "npm:http-proxy-middleware",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -11346,7 +11416,7 @@
   },
   {
     "source": "npm:http-proxy",
-    "target": "npm:eventemitter3",
+    "target": "npm:eventemitter3@4.0.7",
     "type": "static"
   },
   {
@@ -11446,7 +11516,7 @@
   },
   {
     "source": "npm:inquirer@8.2.6",
-    "target": "npm:ansi-escapes",
+    "target": "npm:ansi-escapes@4.3.2",
     "type": "static"
   },
   {
@@ -11456,7 +11526,7 @@
   },
   {
     "source": "npm:inquirer@8.2.6",
-    "target": "npm:cli-cursor",
+    "target": "npm:cli-cursor@3.1.0",
     "type": "static"
   },
   {
@@ -11526,7 +11596,7 @@
   },
   {
     "source": "npm:inquirer@9.2.15",
-    "target": "npm:ansi-escapes",
+    "target": "npm:ansi-escapes@4.3.2",
     "type": "static"
   },
   {
@@ -11536,7 +11606,7 @@
   },
   {
     "source": "npm:inquirer@9.2.15",
-    "target": "npm:cli-cursor",
+    "target": "npm:cli-cursor@3.1.0",
     "type": "static"
   },
   {
@@ -11776,7 +11846,7 @@
   },
   {
     "source": "npm:jest-changed-files",
-    "target": "npm:execa",
+    "target": "npm:execa@5.1.1",
     "type": "static"
   },
   {
@@ -12131,7 +12201,7 @@
   },
   {
     "source": "npm:jest-config@29.7.0",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -12261,7 +12331,7 @@
   },
   {
     "source": "npm:jest-config@30.2.0",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -12506,7 +12576,7 @@
   },
   {
     "source": "npm:jest-haste-map@29.7.0",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -12561,7 +12631,7 @@
   },
   {
     "source": "npm:jest-haste-map@30.2.0",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -12661,7 +12731,7 @@
   },
   {
     "source": "npm:jest-message-util@29.7.0",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -12706,7 +12776,7 @@
   },
   {
     "source": "npm:jest-message-util@30.2.0",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {
@@ -13636,7 +13706,7 @@
   },
   {
     "source": "npm:jest-watcher@29.7.0",
-    "target": "npm:ansi-escapes",
+    "target": "npm:ansi-escapes@4.3.2",
     "type": "static"
   },
   {
@@ -13676,7 +13746,7 @@
   },
   {
     "source": "npm:jest-watcher@30.2.0",
-    "target": "npm:ansi-escapes",
+    "target": "npm:ansi-escapes@4.3.2",
     "type": "static"
   },
   {
@@ -13940,6 +14010,91 @@
     "type": "static"
   },
   {
+    "source": "npm:lint-staged",
+    "target": "npm:chalk@5.3.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:lint-staged",
+    "target": "npm:commander@11.0.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:lint-staged",
+    "target": "npm:debug@4.3.4",
+    "type": "static"
+  },
+  {
+    "source": "npm:lint-staged",
+    "target": "npm:execa@7.2.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:lint-staged",
+    "target": "npm:lilconfig@2.1.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:lint-staged",
+    "target": "npm:listr2",
+    "type": "static"
+  },
+  {
+    "source": "npm:lint-staged",
+    "target": "npm:micromatch@4.0.5",
+    "type": "static"
+  },
+  {
+    "source": "npm:lint-staged",
+    "target": "npm:pidtree",
+    "type": "static"
+  },
+  {
+    "source": "npm:lint-staged",
+    "target": "npm:string-argv",
+    "type": "static"
+  },
+  {
+    "source": "npm:lint-staged",
+    "target": "npm:yaml@2.3.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:listr2",
+    "target": "npm:cli-truncate",
+    "type": "static"
+  },
+  {
+    "source": "npm:listr2",
+    "target": "npm:colorette",
+    "type": "static"
+  },
+  {
+    "source": "npm:listr2",
+    "target": "npm:eventemitter3@5.0.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:listr2",
+    "target": "npm:log-update",
+    "type": "static"
+  },
+  {
+    "source": "npm:listr2",
+    "target": "npm:rfdc",
+    "type": "static"
+  },
+  {
+    "source": "npm:listr2",
+    "target": "npm:wrap-ansi@8.1.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:listr2",
+    "target": "npm:enquirer@2.4.1",
+    "type": "static"
+  },
+  {
     "source": "npm:loader-utils",
     "target": "npm:big.js",
     "type": "static"
@@ -13977,6 +14132,31 @@
   {
     "source": "npm:log-symbols",
     "target": "npm:is-unicode-supported",
+    "type": "static"
+  },
+  {
+    "source": "npm:log-update",
+    "target": "npm:ansi-escapes@5.0.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:log-update",
+    "target": "npm:cli-cursor@4.0.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:log-update",
+    "target": "npm:slice-ansi",
+    "type": "static"
+  },
+  {
+    "source": "npm:log-update",
+    "target": "npm:strip-ansi@7.1.2",
+    "type": "static"
+  },
+  {
+    "source": "npm:log-update",
+    "target": "npm:wrap-ansi@8.1.0",
     "type": "static"
   },
   {
@@ -14045,12 +14225,22 @@
     "type": "static"
   },
   {
-    "source": "npm:micromatch",
+    "source": "npm:micromatch@4.0.5",
     "target": "npm:braces",
     "type": "static"
   },
   {
-    "source": "npm:micromatch",
+    "source": "npm:micromatch@4.0.5",
+    "target": "npm:picomatch@2.3.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:micromatch@4.0.8",
+    "target": "npm:braces",
+    "type": "static"
+  },
+  {
+    "source": "npm:micromatch@4.0.8",
     "target": "npm:picomatch@2.3.1",
     "type": "static"
   },
@@ -14165,8 +14355,13 @@
     "type": "static"
   },
   {
-    "source": "npm:npm-run-path",
-    "target": "npm:path-key",
+    "source": "npm:npm-run-path@4.0.1",
+    "target": "npm:path-key@3.1.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:npm-run-path@5.3.0",
+    "target": "npm:path-key@4.0.0",
     "type": "static"
   },
   {
@@ -14206,7 +14401,7 @@
   },
   {
     "source": "npm:nx",
-    "target": "npm:cli-cursor",
+    "target": "npm:cli-cursor@3.1.0",
     "type": "static"
   },
   {
@@ -14281,7 +14476,7 @@
   },
   {
     "source": "npm:nx",
-    "target": "npm:npm-run-path",
+    "target": "npm:npm-run-path@4.0.1",
     "type": "static"
   },
   {
@@ -14435,8 +14630,13 @@
     "type": "static"
   },
   {
-    "source": "npm:onetime",
-    "target": "npm:mimic-fn",
+    "source": "npm:onetime@5.1.2",
+    "target": "npm:mimic-fn@2.1.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:onetime@6.0.0",
+    "target": "npm:mimic-fn@4.0.0",
     "type": "static"
   },
   {
@@ -14516,7 +14716,7 @@
   },
   {
     "source": "npm:ora@5.3.0",
-    "target": "npm:cli-cursor",
+    "target": "npm:cli-cursor@3.1.0",
     "type": "static"
   },
   {
@@ -14556,7 +14756,7 @@
   },
   {
     "source": "npm:ora@5.4.1",
-    "target": "npm:cli-cursor",
+    "target": "npm:cli-cursor@3.1.0",
     "type": "static"
   },
   {
@@ -15505,12 +15705,22 @@
     "type": "static"
   },
   {
-    "source": "npm:restore-cursor",
-    "target": "npm:onetime",
+    "source": "npm:restore-cursor@3.1.0",
+    "target": "npm:onetime@5.1.2",
     "type": "static"
   },
   {
-    "source": "npm:restore-cursor",
+    "source": "npm:restore-cursor@3.1.0",
+    "target": "npm:signal-exit@3.0.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:restore-cursor@4.0.0",
+    "target": "npm:onetime@5.1.2",
+    "type": "static"
+  },
+  {
+    "source": "npm:restore-cursor@4.0.0",
     "target": "npm:signal-exit@3.0.7",
     "type": "static"
   },
@@ -15995,6 +16205,16 @@
     "type": "static"
   },
   {
+    "source": "npm:slice-ansi",
+    "target": "npm:ansi-styles@6.2.3",
+    "type": "static"
+  },
+  {
+    "source": "npm:slice-ansi",
+    "target": "npm:is-fullwidth-code-point@4.0.0",
+    "type": "static"
+  },
+  {
     "source": "npm:socket.io-adapter",
     "target": "npm:debug@4.3.7",
     "type": "static"
@@ -16196,7 +16416,7 @@
   },
   {
     "source": "npm:string-width@4.2.3",
-    "target": "npm:is-fullwidth-code-point",
+    "target": "npm:is-fullwidth-code-point@3.0.0",
     "type": "static"
   },
   {
@@ -16211,7 +16431,7 @@
   },
   {
     "source": "npm:string-width-cjs",
-    "target": "npm:is-fullwidth-code-point",
+    "target": "npm:is-fullwidth-code-point@3.0.0",
     "type": "static"
   },
   {
@@ -16631,7 +16851,7 @@
   },
   {
     "source": "npm:ts-loader",
-    "target": "npm:micromatch",
+    "target": "npm:micromatch@4.0.8",
     "type": "static"
   },
   {

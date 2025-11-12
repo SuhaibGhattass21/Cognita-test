@@ -60,7 +60,10 @@ export class KafkaModule {
 
   static createKafkaConfig(): KafkaModuleOptions {
     return {
-      brokers: (process.env['KAFKA_BROKERS'] || 'kafka:29092').split(','),
+      // Default to localhost:9092 for host-based local runs. When running under
+      // Docker Compose, set KAFKA_BROKERS=kafka:29092 (compose exposes broker
+      // under that hostname). Allow override via environment variable.
+      brokers: (process.env['KAFKA_BROKERS'] || 'localhost:9092').split(','),
       clientId: process.env['KAFKA_CLIENT_ID'] || 'aimeet-service',
       groupId: process.env['KAFKA_GROUP_ID'] || 'aimeet-group',
       ssl: process.env['KAFKA_SSL'] === 'true',

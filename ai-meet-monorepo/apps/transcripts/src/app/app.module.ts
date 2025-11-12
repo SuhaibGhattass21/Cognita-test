@@ -11,7 +11,9 @@ import { DatabaseModule } from '@aimeet/db';
   imports: [
     DatabaseModule,
     KafkaModule.forRoot({
-      brokers: (process.env['KAFKA_BROKERS'] || 'kafka:29092').split(','),
+      // Use localhost:9092 by default for host-local runs; override by
+      // setting KAFKA_BROKERS when running in Docker Compose (kafka:29092).
+      brokers: (process.env['KAFKA_BROKERS'] || 'localhost:9092').split(','),
       clientId: process.env['KAFKA_CLIENT_ID'] || 'transcripts-service',
       groupId: process.env['KAFKA_GROUP_ID'] || 'transcripts-service-group',
     }),

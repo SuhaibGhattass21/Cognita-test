@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx build transcripts --verbose",
-    "startTime": "2025-11-06T21:11:06.222Z",
-    "endTime": "2025-11-06T21:11:09.785Z",
+    "command": "nx test meeting --testNamePattern=Kafka",
+    "startTime": "2025-11-12T12:20:30.739Z",
+    "endTime": "2025-11-12T12:20:34.425Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "transcripts:build",
-      "target": "build",
-      "projectName": "transcripts",
-      "hash": "16730854737903557911",
-      "startTime": "2025-11-06T21:11:06.298Z",
-      "endTime": "2025-11-06T21:11:09.768Z",
+      "taskId": "meeting:test",
+      "target": "test",
+      "projectName": "meeting",
+      "hash": "10974675794383336536",
+      "startTime": "2025-11-12T12:20:30.820Z",
+      "endTime": "2025-11-12T12:20:34.420Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

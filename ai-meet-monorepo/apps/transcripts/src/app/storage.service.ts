@@ -210,7 +210,7 @@ export class StorageService {
     text += `Generated: ${new Date().toISOString()}\n`;
     text += `Total Duration: ${transcript.metadata.totalDuration} seconds\n\n`;
 
-    transcript.segments.forEach((segment, index) => {
+    transcript.segments.forEach((segment) => {
       const timestamp = new Date(segment.timestamp).toISOString();
       text += `[${timestamp}] ${segment.speakerName || 'Unknown'}: ${segment.text}\n`;
     });

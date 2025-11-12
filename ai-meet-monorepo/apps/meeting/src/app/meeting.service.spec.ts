@@ -35,6 +35,7 @@ describe('MeetingService', () => {
     }).compile();
 
     service = module.get<MeetingService>(MeetingService);
+    await service.onModuleInit(); // Initialize the Prisma client
   });
 
   it('should be defined', () => {

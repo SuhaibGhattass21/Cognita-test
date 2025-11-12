@@ -43,7 +43,7 @@ export class TranscriptEventHandler implements OnModuleInit {
     }
   }
 
-  async handleMeetingCreated(event: MeetingCreatedEvent, metadata: any): Promise<void> {
+  async handleMeetingCreated(event: MeetingCreatedEvent, _metadata: any): Promise<void> {
     this.logger.log(`Processing meeting.created event for meeting: ${event.data.meetingId}`);
 
     try {
@@ -111,7 +111,7 @@ export class TranscriptEventHandler implements OnModuleInit {
     }
   }
 
-  async handleMeetingEnded(event: MeetingEndedEvent, metadata: any): Promise<void> {
+  async handleMeetingEnded(event: MeetingEndedEvent, _metadata: any): Promise<void> {
     this.logger.log(`Processing meeting.ended event for meeting: ${event.data.meetingId}`);
 
     try {

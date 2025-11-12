@@ -165,7 +165,7 @@ describe('Kafka Consumer Connection Test', () => {
       
       try {
         // Test with invalid topic name to simulate error
-        const errorHandler = async (event: any, metadata: any) => {
+        const errorHandler = async (_event: any, _metadata: any) => {
           logger.log('Unexpected message in error test');
         };
 
@@ -194,7 +194,7 @@ describe('Kafka Consumer Connection Test', () => {
       
       try {
         // Create a handler that throws an error
-        const errorHandler = async (event: any, metadata: any) => {
+        const errorHandler = async (_event: any, _metadata: any) => {
           logger.log('Received message, now throwing error for testing...');
           throw new Error('Test error in message processing');
         };

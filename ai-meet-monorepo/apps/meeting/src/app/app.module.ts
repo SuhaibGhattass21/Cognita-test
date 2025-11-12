@@ -9,7 +9,10 @@ import { DatabaseModule } from '@aimeet/db';
   imports: [
     DatabaseModule,
     KafkaModule.forRoot({
-      brokers: (process.env['KAFKA_BROKERS'] || 'kafka:29092').split(','),
+      // Prefer host-local broker when running services outside of Docker.
+      // To run inside Docker Compose keep KAFKA_BROKERS=kafka:29092 in compose
+      // env or override as needed.
+      brokers: (process.env['KAFKA_BROKERS'] || 'localhost:9092').split(','),
       clientId: process.env['KAFKA_CLIENT_ID'] || 'meeting-service',
       groupId: process.env['KAFKA_GROUP_ID'] || 'meeting-service-group',
     }),

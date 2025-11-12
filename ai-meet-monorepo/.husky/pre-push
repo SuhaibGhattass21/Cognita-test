@@ -1,4 +1,8 @@
 #!/bin/sh
 echo "Running build and test before pushing..."
-pnpm nx affected:build --all
-pnpm nx affected:test --all
+# Use run-many and avoid heavy parallel argument expansion on Windows shells.
+# This is a safer hook for contributors on Windows where command-line length
+# and parallel execution can cause failures. If you prefer the aggressive
+# full-affected command, set an env var to opt-in.
+pnpm nx run-many --target=build --all --parallel=false
+pnpm nx run-many --target=test --all --parallel=false

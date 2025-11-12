@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@aimeet/kafka": [
+        "libs/common/kafka/index.ts"
+      ],
+      "@aimeet/db": [
+        "libs/common/db/index.ts"
+      ]
+    }
+  },
+  "extends": "..\\..\\..\\..\\apps\\meeting\\tsconfig.app.json"
+}
