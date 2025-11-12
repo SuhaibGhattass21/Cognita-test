@@ -1,0 +1,22 @@
+name: Trivy Scan
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Trivy
+        run: |
+          sudo apt-get update && sudo apt-get install -y wget
+          wget -qO- https://github.com/aquasecurity/trivy/releases/latest/download/trivy_$(dpkg --print-architecture).tar.gz | sudo tar -xz -C /usr/local/bin
+
+      - name: Run Trivy filesystem scan
+        run: trivy fs --security-checks vuln,config . || true

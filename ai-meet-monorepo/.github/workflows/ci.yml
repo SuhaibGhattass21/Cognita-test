@@ -1,0 +1,68 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        ports: ['5432:5432']
+        env:
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd="pg_isready -U postgres"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+      kafka:
+        image: bitnami/kafka:latest
+        ports: ['9092:9092']
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        run: corepack enable && corepack prepare pnpm@latest --activate
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm nx lint --parallel
+
+      - name: Type Check
+        run: pnpm tsc -b
+
+      - name: Build all projects
+        run: pnpm nx affected:build --all
+
+      - name: Test Services
+        run: |
+          pnpm nx test meeting
+          pnpm nx test transcripts
+
+      - name: Prisma Schema Validation
+        run: |
+          pnpm dlx prisma validate --schema=apps/meeting/prisma/schema.prisma
+          pnpm dlx prisma validate --schema=apps/transcripts/prisma/schema.prisma
+
+      - name: Docker Compose Build Validation
+        run: docker compose config
+
+      - name: Security Audit
+        run: pnpm audit || true
+
+    outputs:
+      build-status: ${{ job.status }}

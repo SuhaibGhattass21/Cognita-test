@@ -13502,6 +13502,11 @@
       },
       {
         "source": "ai-meet-monorepo",
+        "target": "npm:prettier",
+        "type": "static"
+      },
+      {
+        "source": "ai-meet-monorepo",
         "target": "npm:@azure/storage-blob",
         "type": "static"
       },
@@ -32738,5 +32743,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1762466402816
+  "computedAt": 1762944966442
 }

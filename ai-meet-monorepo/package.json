@@ -51,9 +51,14 @@
     "prisma": "6.18.0",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "prettier": "^2.8.8"
   },
   "nx": {},
+  "prepare": "husky install",
+  "format": "prettier --write \"**/*.{ts,js,json,md}\"",
   "dependencies": {
     "@azure/storage-blob": "^12.17.0",
     "@nestjs/common": "^10.3.0",

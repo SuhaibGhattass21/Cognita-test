@@ -1,0 +1,4 @@
+# Code owners to enforce review and responsibility
+* @repo-admin
+/apps/meeting/* @meeting-lead
+/apps/transcripts/* @transcripts-lead
